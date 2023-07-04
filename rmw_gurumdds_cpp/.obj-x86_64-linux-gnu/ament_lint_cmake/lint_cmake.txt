@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_lint_cmake --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/lint_cmake.xunit.xml
+
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/lint_cmake.xunit.xml'

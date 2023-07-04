@@ -1,0 +1,13 @@
+Package: ros-iron-rmw-gurumdds-cpp-dbgsym
+Package-Type: ddeb
+Source: ros-iron-rmw-gurumdds-cpp
+Version: 5.0.0-0jammy
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Donghee Lee <donghee@gurum.cc>
+Installed-Size: 2169
+Depends: ros-iron-rmw-gurumdds-cpp (= 5.0.0-0jammy)
+Section: debug
+Priority: optional
+Description: debug symbols for ros-iron-rmw-gurumdds-cpp
+Build-Ids: 4343e73284aedb5fc6bd91f1536d4a15710450a6

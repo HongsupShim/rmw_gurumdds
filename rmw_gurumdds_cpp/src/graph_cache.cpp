@@ -17,6 +17,8 @@
 #include "rmw/publisher_options.h"
 #include "rmw/subscription_options.h"
 #include "rmw/qos_profiles.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 
 #include "rmw_gurumdds_cpp/context_listener_thread.hpp"
 #include "rmw_gurumdds_cpp/gid.hpp"
@@ -35,7 +37,7 @@ __add_entity(
   const rmw_gid_t * const dp_gid,
   const char * const topic_name,
   const char * const type_name,
-  const rosidl_type_hash_t & type_hash
+  const rosidl_type_hash_t & type_hash,
   const dds_HistoryQosPolicy * const history,
   const dds_ReliabilityQosPolicy * const reliability,
   const dds_DurabilityQosPolicy * const durability,
@@ -181,10 +183,13 @@ __add_local_publisher(
   dds_DataWriterQos dw_qos;
   dds_DataWriterQos * dw_qos_ptr = &dw_qos;
 
+  // const uint8_t *user_data_data = DDS_OctetSeq_get_contiguous_buffer(&user_data->value);
+  // const size_t user_data_size = DDS_OctetSeq_get_length(&user_data->value);
+
   dds_Topic * topic = dds_DataWriter_get_topic(datawriter);
   const char * topic_name = dds_Topic_get_name(topic);
   const char * type_name = dds_Topic_get_type_name(topic);
-
+  
   dds_ReturnCode_t ret = dds_DataWriterQos_copy(&dw_qos, &dds_DATAWRITER_QOS_DEFAULT);
   if (ret != dds_RETCODE_OK) {
     RMW_SET_ERROR_MSG("failed to initialize DataWriterQos");
@@ -210,7 +215,7 @@ __add_local_publisher(
     &ctx->common_ctx.gid,
     topic_name,
     type_name,
-    type_hash,
+    rosidl_get_zero_initialized_type_hash(),
     &dw_qos.history,
     &dw_qos.reliability,
     &dw_qos.durability,
@@ -252,6 +257,7 @@ __add_local_subscriber(
     reinterpret_cast<dds_Topic *>(dds_DataReader_get_topicdescription(datareader));
   const char * topic_name = dds_Topic_get_name(topic);
   const char * type_name = dds_Topic_get_type_name(topic);
+ 
 
   dds_ReturnCode_t ret = dds_DataReaderQos_copy(&dr_qos, &dds_DATAREADER_QOS_DEFAULT);
   if (ret != dds_RETCODE_OK) {
@@ -278,7 +284,7 @@ __add_local_subscriber(
     &ctx->common_ctx.gid,
     topic_name,
     type_name,
-    type_hash,
+    rosidl_get_zero_initialized_type_hash(),
     &dr_qos.history,
     &dr_qos.reliability,
     &dr_qos.durability,
@@ -906,7 +912,7 @@ graph_add_remote_entity(
   const dds_GUID_t * const dp_guid,
   const char * const topic_name,
   const char * const type_name,
-  const rosidl_type_hash_t & type_hash
+  const rosidl_type_hash_t & type_hash,
   const dds_ReliabilityQosPolicy * const reliability,
   const dds_DurabilityQosPolicy * const durability,
   const dds_DeadlineQosPolicy * const deadline,

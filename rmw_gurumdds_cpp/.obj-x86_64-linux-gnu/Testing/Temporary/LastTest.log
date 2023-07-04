@@ -1,0 +1,401 @@
+Start testing: Jul 04 15:37 KST
+----------------------------------------------------------
+1/6 Testing: copyright
+1/6 Test: copyright
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/copyright.xunit.xml" "--package-name" "rmw_gurumdds_cpp" "--output-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/ament_copyright/copyright.txt" "--command" "/opt/ros/iron/bin/ament_copyright" "--xunit-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/copyright.xunit.xml"
+Directory: /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp
+"copyright" start time: Jul 04 15:37 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_copyright --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/copyright.xunit.xml
+No problems found, checked 60 files
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/copyright.xunit.xml'
+<end of output>
+Test time =   1.50 sec
+----------------------------------------------------------
+Test Passed.
+"copyright" end time: Jul 04 15:37 KST
+"copyright" time elapsed: 00:00:01
+----------------------------------------------------------
+
+2/6 Testing: cppcheck
+2/6 Test: cppcheck
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cppcheck.xunit.xml" "--package-name" "rmw_gurumdds_cpp" "--output-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/iron/bin/ament_cppcheck" "--xunit-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cppcheck.xunit.xml" "--include_dirs" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include"
+Directory: /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp
+"cppcheck" start time: Jul 04 15:37 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_cppcheck --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cppcheck.xunit.xml --include_dirs /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cppcheck.xunit.xml'
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck" end time: Jul 04 15:37 KST
+"cppcheck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: cpplint
+3/6 Test: cpplint
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cpplint.xunit.xml" "--package-name" "rmw_gurumdds_cpp" "--output-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/ament_cpplint/cpplint.txt" "--command" "/opt/ros/iron/bin/ament_cpplint" "--xunit-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cpplint.xunit.xml"
+Directory: /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp
+"cpplint" start time: Jul 04 15:37 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_cpplint --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cpplint.xunit.xml
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:192:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:260:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:295:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Category 'whitespace/end_of_line' errors found: 2
+Category 'whitespace/ending_newline' errors found: 1
+Total errors found: 3
+Using '--root=/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include' argument
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/context_listener_thread.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/demangle.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/get_entities.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/gid.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/graph_cache.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/guid.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/identifier.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/namespace_prefix.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_publisher.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_qos.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_subscription.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_wait.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/serialization_format.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/types.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/visibility_control.h
+
+Using '--root=/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src' argument
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/cdr_buffer.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/context_listener_thread.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/demangle.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/get_entities.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/identifier.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/message_converter.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/message_converter.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/names_and_types_helpers.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/namespace_prefix.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_compare_gids_equal.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_context_impl.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_count.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_features.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_implementation_identifier.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_network_flow_endpoints.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_serialization_format.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_topic_endpoint_info.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_guard_condition.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_init.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_logging.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_node.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_node_info_and_types.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_qos.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_serialize.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service_names_and_types.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_topic_names_and_types.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_wait.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/serialization_format.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/type_support_common.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/type_support_service.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cpplint.xunit.xml'
+<end of output>
+Test time =   2.30 sec
+----------------------------------------------------------
+Test Failed.
+"cpplint" end time: Jul 04 15:37 KST
+"cpplint" time elapsed: 00:00:02
+----------------------------------------------------------
+
+4/6 Testing: lint_cmake
+4/6 Test: lint_cmake
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/lint_cmake.xunit.xml" "--package-name" "rmw_gurumdds_cpp" "--output-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/iron/bin/ament_lint_cmake" "--xunit-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/lint_cmake.xunit.xml"
+Directory: /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp
+"lint_cmake" start time: Jul 04 15:37 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_lint_cmake --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/lint_cmake.xunit.xml'
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"lint_cmake" end time: Jul 04 15:37 KST
+"lint_cmake" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: uncrustify
+5/6 Test: uncrustify
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/uncrustify.xunit.xml" "--package-name" "rmw_gurumdds_cpp" "--output-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/iron/bin/ament_uncrustify" "--xunit-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/uncrustify.xunit.xml"
+Directory: /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp
+"uncrustify" start time: Jul 04 15:37 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_uncrustify --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/uncrustify.xunit.xml
+Code style divergence in file 'src/graph_cache.cpp':
+
+--- src/graph_cache.cpp
++++ src/graph_cache.cpp.uncrustify
+@@ -192 +192 @@
+-  
++
+@@ -260 +260 @@
+- 
++
+
+Code style divergence in file 'src/qos.cpp':
+
+--- src/qos.cpp
++++ src/qos.cpp.uncrustify
+@@ -295 +295 @@
+-// }
++// }
+
+2 files with code style divergence
+No code style divergence in file 'include/rmw_gurumdds_cpp/context_listener_thread.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/dds_include.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/demangle.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/event_converter.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/get_entities.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/gid.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/graph_cache.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/guid.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/identifier.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/names_and_types_helpers.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/namespace_prefix.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/qos.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/rmw_context_impl.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/rmw_publisher.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/rmw_qos.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/rmw_subscription.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/rmw_wait.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/serialization_format.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/types.hpp'
+
+No code style divergence in file 'include/rmw_gurumdds_cpp/visibility_control.h'
+
+No code style divergence in file 'src/cdr_buffer.hpp'
+
+No code style divergence in file 'src/context_listener_thread.cpp'
+
+No code style divergence in file 'src/demangle.cpp'
+
+No code style divergence in file 'src/event_converter.cpp'
+
+No code style divergence in file 'src/get_entities.cpp'
+
+No code style divergence in file 'src/identifier.cpp'
+
+No code style divergence in file 'src/message_converter.cpp'
+
+No code style divergence in file 'src/message_converter.hpp'
+
+No code style divergence in file 'src/names_and_types_helpers.cpp'
+
+No code style divergence in file 'src/namespace_prefix.cpp'
+
+No code style divergence in file 'src/rmw_client.cpp'
+
+No code style divergence in file 'src/rmw_compare_gids_equal.cpp'
+
+No code style divergence in file 'src/rmw_context_impl.cpp'
+
+No code style divergence in file 'src/rmw_count.cpp'
+
+No code style divergence in file 'src/rmw_event.cpp'
+
+No code style divergence in file 'src/rmw_features.cpp'
+
+No code style divergence in file 'src/rmw_get_implementation_identifier.cpp'
+
+No code style divergence in file 'src/rmw_get_network_flow_endpoints.cpp'
+
+No code style divergence in file 'src/rmw_get_serialization_format.cpp'
+
+No code style divergence in file 'src/rmw_get_topic_endpoint_info.cpp'
+
+No code style divergence in file 'src/rmw_guard_condition.cpp'
+
+No code style divergence in file 'src/rmw_init.cpp'
+
+No code style divergence in file 'src/rmw_logging.cpp'
+
+No code style divergence in file 'src/rmw_node.cpp'
+
+No code style divergence in file 'src/rmw_node_info_and_types.cpp'
+
+No code style divergence in file 'src/rmw_publisher.cpp'
+
+No code style divergence in file 'src/rmw_qos.cpp'
+
+No code style divergence in file 'src/rmw_serialize.cpp'
+
+No code style divergence in file 'src/rmw_service.cpp'
+
+No code style divergence in file 'src/rmw_service_names_and_types.cpp'
+
+No code style divergence in file 'src/rmw_subscription.cpp'
+
+No code style divergence in file 'src/rmw_topic_names_and_types.cpp'
+
+No code style divergence in file 'src/rmw_wait.cpp'
+
+No code style divergence in file 'src/serialization_format.cpp'
+
+No code style divergence in file 'src/type_support_common.hpp'
+
+No code style divergence in file 'src/type_support_service.hpp'
+
+No code style divergence in file 'src/types.cpp'
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/uncrustify.xunit.xml'
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Failed.
+"uncrustify" end time: Jul 04 15:37 KST
+"uncrustify" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: xmllint
+6/6 Test: xmllint
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/xmllint.xunit.xml" "--package-name" "rmw_gurumdds_cpp" "--output-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/ament_xmllint/xmllint.txt" "--command" "/opt/ros/iron/bin/ament_xmllint" "--xunit-file" "/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/xmllint.xunit.xml"
+Directory: /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp
+"xmllint" start time: Jul 04 15:37 KST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_xmllint --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/xmllint.xunit.xml'
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"xmllint" end time: Jul 04 15:37 KST
+"xmllint" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 04 15:37 KST
+
+copyright =   1.50 sec*proc
+
+cppcheck =   0.11 sec*proc
+
+cpplint =   2.30 sec*proc
+
+lint_cmake =   0.10 sec*proc
+
+linter =   4.76 sec*proc
+
+uncrustify =   0.35 sec*proc
+
+xmllint =   0.40 sec*proc
+

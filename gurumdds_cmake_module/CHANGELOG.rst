@@ -2,6 +2,11 @@
 Changelog for package gurumdds_cmake_module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add type_hash_t in function graph_add_remote_entity
+* Contributors: Hongsup
+
 5.0.0 (2023-06-30)
 ------------------
 * iron new release

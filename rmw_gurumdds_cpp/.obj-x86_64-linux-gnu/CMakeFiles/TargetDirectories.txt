@@ -1,0 +1,10 @@
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/uninstall.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/rmw_gurumdds_cpp_uninstall.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/rmw_gurumdds_cpp.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/test.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/edit_cache.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/list_install_components.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/install.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/install/local.dir
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/CMakeFiles/install/strip.dir

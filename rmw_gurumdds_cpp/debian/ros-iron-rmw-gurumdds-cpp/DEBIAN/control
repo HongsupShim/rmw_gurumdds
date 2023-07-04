@@ -1,0 +1,9 @@
+Package: ros-iron-rmw-gurumdds-cpp
+Version: 5.0.0-0jammy
+Architecture: amd64
+Maintainer: Donghee Lee <donghee@gurum.cc>
+Installed-Size: 560
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), gurumdds-2.8, ros-iron-gurumdds-cmake-module, ros-iron-rcutils, ros-iron-rmw, ros-iron-rmw-dds-common, ros-iron-rosidl-runtime-c, ros-iron-rosidl-runtime-cpp, ros-iron-rosidl-typesupport-introspection-c, ros-iron-rosidl-typesupport-introspection-cpp
+Section: misc
+Priority: optional
+Description: Implement the ROS middleware interface using GurumNetworks GurumDDS static code generation in C++.

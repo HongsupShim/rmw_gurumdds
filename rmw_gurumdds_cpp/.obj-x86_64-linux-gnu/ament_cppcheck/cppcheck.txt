@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_cppcheck --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cppcheck.xunit.xml --include_dirs /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include
+
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cppcheck.xunit.xml'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="rmw_gurumdds_cpp.lint_cmake"
+  tests="2"
+  errors="0"
+  failures="0"
+  time="0.002"
+>
+  <testcase
+    name="CMakeLists.txt"
+    classname="rmw_gurumdds_cpp.lint_cmake"/>
+  <testcase
+    name="rmw_gurumdds_cpp-extras.cmake"
+    classname="rmw_gurumdds_cpp.lint_cmake"/>
+  <system-out>Checked files:
+* CMakeLists.txt
+* rmw_gurumdds_cpp-extras.cmake</system-out>
+</testsuite>

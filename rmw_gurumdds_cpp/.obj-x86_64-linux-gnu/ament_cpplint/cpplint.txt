@@ -1,0 +1,135 @@
+-- run_test.py: invoking following command in '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp':
+ - /opt/ros/iron/bin/ament_cpplint --xunit-file /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cpplint.xunit.xml
+
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:192:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:260:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:295:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Category 'whitespace/end_of_line' errors found: 2
+Category 'whitespace/ending_newline' errors found: 1
+Total errors found: 3
+Using '--root=/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include' argument
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/context_listener_thread.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/demangle.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/get_entities.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/gid.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/graph_cache.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/guid.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/identifier.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/namespace_prefix.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_publisher.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_qos.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_subscription.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_wait.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/serialization_format.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/types.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/visibility_control.h
+
+Using '--root=/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src' argument
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/cdr_buffer.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/context_listener_thread.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/demangle.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/get_entities.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/identifier.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/message_converter.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/message_converter.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/names_and_types_helpers.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/namespace_prefix.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_compare_gids_equal.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_context_impl.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_count.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_features.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_implementation_identifier.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_network_flow_endpoints.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_serialization_format.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_get_topic_endpoint_info.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_guard_condition.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_init.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_logging.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_node.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_node_info_and_types.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_qos.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_serialize.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service_names_and_types.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_topic_names_and_types.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_wait.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/serialization_format.cpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/type_support_common.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/type_support_service.hpp
+
+Done processing /home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp
+
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/.obj-x86_64-linux-gnu/test_results/rmw_gurumdds_cpp/cpplint.xunit.xml'

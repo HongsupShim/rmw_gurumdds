@@ -50,6 +50,11 @@ Changelog for package rmw_gurumdds_cpp
 4.0.0 (2022-05-09)
 ------------------
 
+Forthcoming
+-----------
+* add type_hash_t in function graph_add_remote_entity
+* Contributors: Hongsup
+
 4.2.0 (2023-03-07)
 ------------------
 * Add maintainer

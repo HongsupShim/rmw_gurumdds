@@ -13,6 +13,8 @@
 // limitations under the License.
 
 #include "rmw/impl/cpp/key_value.hpp"
+#include "rosidl_runtime_c/type_hash.h"
+#include "rcutils/error_handling.h"
 
 #include "rmw_gurumdds_cpp/event_converter.hpp"
 #include "rmw_gurumdds_cpp/gid.hpp"
@@ -274,6 +276,7 @@ void on_publication_changed(
       &dp_guid,
       data->topic_name,
       data->type_name,
+      rosidl_get_zero_initialized_type_hash(),
       &data->reliability,
       &data->durability,
       &data->deadline,
@@ -337,6 +340,7 @@ void on_subscription_changed(
       &dp_guid,
       data->topic_name,
       data->type_name,
+      rosidl_get_zero_initialized_type_hash(),
       &data->reliability,
       &data->durability,
       &data->deadline,

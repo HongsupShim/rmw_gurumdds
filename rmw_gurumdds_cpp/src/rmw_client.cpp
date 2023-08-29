@@ -28,6 +28,11 @@
 #include "rmw/impl/cpp/macros.hpp"
 #include "rmw/types.h"
 #include "rmw/validate_full_topic_name.h"
+#include "rmw/qos_profiles.h"
+#include "rmw/impl/cpp/key_value.hpp"
+#include "rmw/get_topic_endpoint_info.h"
+#include "rmw/qos_string_conversions.h"
+
 
 #include "rmw_gurumdds_cpp/gid.hpp"
 #include "rmw_gurumdds_cpp/graph_cache.hpp"
@@ -37,8 +42,9 @@
 #include "rmw_gurumdds_cpp/qos.hpp"
 #include "rmw_gurumdds_cpp/rmw_context_impl.hpp"
 #include "rmw_gurumdds_cpp/types.hpp"
-
+#include "rmw_dds_common/qos.hpp"
 #include "type_support_service.hpp"
+
 
 extern "C"
 {
@@ -62,6 +68,13 @@ rmw_create_client(
     return nullptr;
   }
   RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
+  // rmw_qos_profile_t adapted_qos_policies = rmw_dds_common::qos_profile_update_best_available_for_services(*qos_policies);
+
+  //  if (!is_valid_qos(adapted_qos_policies)) {
+  //   RMW_SET_ERROR_MSG("create_client() called with invalid QoS");
+  //   return nullptr;
+  // }
+
 
   if (!qos_policies->avoid_ros_namespace_conventions) {
     int validation_result = RMW_TOPIC_VALID;
@@ -262,7 +275,9 @@ rmw_create_client(
   }
 
   // Create datawriter for request
-  if (!get_datawriter_qos(publisher, qos_policies, &datawriter_qos)) {
+  rosidl_type_hash_t type_hash;
+  if (!get_datawriter_qos(publisher, qos_policies, type_hash, &datawriter_qos))
+  {
     // Error message already set
     goto fail;
   }
@@ -282,7 +297,8 @@ rmw_create_client(
     goto fail;
   }
 
-  if (!get_datareader_qos(subscriber, qos_policies, &datareader_qos)) {
+  if (!get_datareader_qos(subscriber, qos_policies, type_hash, &datareader_qos))
+  {
     // error message already set
     goto fail;
   }
@@ -993,6 +1009,12 @@ rmw_client_set_on_new_response_callback(
   (void)rmw_client;
   (void)callback;
   (void)user_data;
+
+  // auto custom_client_info = static_cast<CustomClientInfo *>(rmw_client->data);
+  // custom_client_info->listener_->set_on_new_response_callback(
+  //   user_data,
+  //   callback);
+  // return RMW_RET_OK;
 
   RMW_SET_ERROR_MSG("rmw_client_set_on_new_request_callback not implemented");
   return RMW_RET_UNSUPPORTED;

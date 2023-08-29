@@ -13,9 +13,14 @@
 // limitations under the License.
 
 #include <limits>
+#include <string> 
+
 
 #include "rmw_dds_common/time_utils.hpp"
+#include "rosidl_runtime_c/type_hash.h"
+#include "rmw_dds_common/qos.hpp"
 
+#include "rosidl_runtime_c/type_hash.h"
 #include "rmw_gurumdds_cpp/qos.hpp"
 
 static inline bool is_time_unspecified(const rmw_time_t & time)
@@ -55,6 +60,7 @@ template<typename dds_EntityQos>
 bool
 set_entity_qos_from_profile_generic(
   const rmw_qos_profile_t * qos_profile,
+  const rosidl_type_hash_t& type_hash,
   dds_EntityQos * entity_qos)
 {
   switch (qos_profile->history) {
@@ -134,6 +140,30 @@ set_entity_qos_from_profile_generic(
     entity_qos->liveliness.lease_duration = rmw_time_to_dds(qos_profile->liveliness_lease_duration);
   }
 
+
+  std::string user_data_str;
+  if (RMW_RET_OK != rmw_dds_common::encode_type_hash_for_user_data_qos(type_hash, user_data_str)) {
+    // RCUTILS_LOG_WARN_NAMED(
+    //   "rmw_gurumdds_cpp",
+    //   "Failed to encode type hash for topic, will not distribute it in USER_DATA.");s
+    printf("Failed to encode type hash for topic");
+    user_data_str.clear();
+    // Since we are going to go on without a hash, we clear the error so other
+    // code won't overwrite it.
+    rmw_reset_error();
+  }
+  std::vector<uint8_t> user_data(user_data_str.begin(), user_data_str.end());
+  entity_qos->user_data.size = user_data.size();
+  int idx=0;
+  for (auto it : user_data)
+  {
+    /* code */
+    entity_qos->user_data.value[idx++] = it;
+  }
+  
+
+  // entity_qos->user_data.setValue(user_data);
+
   return true;
 }
 
@@ -141,6 +171,7 @@ bool
 get_datawriter_qos(
   dds_Publisher * publisher,
   const rmw_qos_profile_t * qos_profile,
+  const rosidl_type_hash_t& type_hash,
   dds_DataWriterQos * datawriter_qos)
 {
   dds_ReturnCode_t ret = dds_Publisher_get_default_datawriter_qos(publisher, datawriter_qos);
@@ -148,12 +179,12 @@ get_datawriter_qos(
     RMW_SET_ERROR_MSG("failed to get default datawriter qos");
     return false;
   }
-
+    
   if (!is_time_unspecified(qos_profile->lifespan)) {
     datawriter_qos->lifespan.duration = rmw_time_to_dds(qos_profile->lifespan);
   }
 
-  set_entity_qos_from_profile_generic(qos_profile, datawriter_qos);
+  set_entity_qos_from_profile_generic(qos_profile, type_hash, datawriter_qos);
 
   return true;
 }
@@ -161,6 +192,7 @@ get_datawriter_qos(
 bool get_datareader_qos(
   dds_Subscriber * subscriber,
   const rmw_qos_profile_t * qos_profile,
+  const rosidl_type_hash_t& type_hash,
   dds_DataReaderQos * datareader_qos)
 {
   dds_ReturnCode_t ret = dds_Subscriber_get_default_datareader_qos(subscriber, datareader_qos);
@@ -169,7 +201,7 @@ bool get_datareader_qos(
     return false;
   }
 
-  set_entity_qos_from_profile_generic(qos_profile, datareader_qos);
+  set_entity_qos_from_profile_generic(qos_profile, type_hash, datareader_qos);
 
   return true;
 }

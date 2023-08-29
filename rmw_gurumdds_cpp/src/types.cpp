@@ -21,43 +21,59 @@
 #include "rmw_gurumdds_cpp/qos.hpp"
 #include "rmw_gurumdds_cpp/rmw_context_impl.hpp"
 #include "rmw_gurumdds_cpp/types.hpp"
+#include "rmw_gurumdds_cpp/qos.hpp" 
+
+#include "rmw_dds_common/context.hpp"
+#include "rmw_dds_common/graph_cache.hpp"
+#include "rmw_dds_common/msg/participant_entities_info.hpp"
+#include "rmw_dds_common/qos.hpp"
+#include "rmw_dds_common/security.hpp"
+
 
 #define ENTITYID_PARTICIPANT 0x000001C1
 
 rmw_ret_t GurumddsPublisherInfo::get_status(
-  dds_StatusMask mask,
-  void * event)
+    dds_StatusMask mask,
+    void *event)
 {
-  if (mask == dds_LIVELINESS_LOST_STATUS) {
+  if (mask == dds_LIVELINESS_LOST_STATUS)
+  {
     dds_LivelinessLostStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataWriter_get_liveliness_lost_status(this->topic_writer, &status);
+        dds_DataWriter_get_liveliness_lost_status(this->topic_writer, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
     auto rmw_status = static_cast<rmw_liveliness_lost_status_t *>(event);
     rmw_status->total_count = status.total_count;
     rmw_status->total_count_change = status.total_count_change;
-  } else if (mask == dds_OFFERED_DEADLINE_MISSED_STATUS) {
+  }
+  else if (mask == dds_OFFERED_DEADLINE_MISSED_STATUS)
+  {
     dds_OfferedDeadlineMissedStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataWriter_get_offered_deadline_missed_status(this->topic_writer, &status);
+        dds_DataWriter_get_offered_deadline_missed_status(this->topic_writer, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
     auto rmw_status = static_cast<rmw_offered_deadline_missed_status_t *>(event);
     rmw_status->total_count = status.total_count;
     rmw_status->total_count_change = status.total_count_change;
-  } else if (mask == dds_OFFERED_INCOMPATIBLE_QOS_STATUS) {
+  }
+  else if (mask == dds_OFFERED_INCOMPATIBLE_QOS_STATUS)
+  {
     dds_OfferedIncompatibleQosStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataWriter_get_offered_incompatible_qos_status(this->topic_writer, &status);
+        dds_DataWriter_get_offered_incompatible_qos_status(this->topic_writer, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
@@ -65,13 +81,15 @@ rmw_ret_t GurumddsPublisherInfo::get_status(
     rmw_status->total_count = status.total_count;
     rmw_status->total_count_change = status.total_count_change;
     rmw_status->last_policy_kind = convert_qos_policy(status.last_policy_id);
-  } else {
+  }
+  else
+  {
     return RMW_RET_UNSUPPORTED;
   }
   return RMW_RET_OK;
 }
 
-dds_StatusCondition * GurumddsPublisherInfo::get_statuscondition()
+dds_StatusCondition *GurumddsPublisherInfo::get_statuscondition()
 {
   return dds_DataWriter_get_statuscondition(this->topic_writer);
 }
@@ -82,15 +100,17 @@ dds_StatusMask GurumddsPublisherInfo::get_status_changes()
 }
 
 rmw_ret_t GurumddsSubscriberInfo::get_status(
-  dds_StatusMask mask,
-  void * event)
+    dds_StatusMask mask,
+    void *event)
 {
-  if (mask == dds_LIVELINESS_CHANGED_STATUS) {
+  if (mask == dds_LIVELINESS_CHANGED_STATUS)
+  {
     dds_LivelinessChangedStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataReader_get_liveliness_changed_status(this->topic_reader, &status);
+        dds_DataReader_get_liveliness_changed_status(this->topic_reader, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
@@ -99,26 +119,32 @@ rmw_ret_t GurumddsSubscriberInfo::get_status(
     rmw_status->not_alive_count = status.not_alive_count;
     rmw_status->alive_count_change = status.alive_count_change;
     rmw_status->not_alive_count_change =
-      status.not_alive_count_change;
-  } else if (mask == dds_REQUESTED_DEADLINE_MISSED_STATUS) {
+        status.not_alive_count_change;
+  }
+  else if (mask == dds_REQUESTED_DEADLINE_MISSED_STATUS)
+  {
     dds_RequestedDeadlineMissedStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataReader_get_requested_deadline_missed_status(this->topic_reader, &status);
+        dds_DataReader_get_requested_deadline_missed_status(this->topic_reader, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
     auto rmw_status =
-      static_cast<rmw_requested_deadline_missed_status_t *>(event);
+        static_cast<rmw_requested_deadline_missed_status_t *>(event);
     rmw_status->total_count = status.total_count;
     rmw_status->total_count_change = status.total_count_change;
-  } else if (mask == dds_REQUESTED_INCOMPATIBLE_QOS_STATUS) {
+  }
+  else if (mask == dds_REQUESTED_INCOMPATIBLE_QOS_STATUS)
+  {
     dds_RequestedIncompatibleQosStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataReader_get_requested_incompatible_qos_status(this->topic_reader, &status);
+        dds_DataReader_get_requested_incompatible_qos_status(this->topic_reader, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
@@ -126,25 +152,30 @@ rmw_ret_t GurumddsSubscriberInfo::get_status(
     rmw_status->total_count = status.total_count;
     rmw_status->total_count_change = status.total_count_change;
     rmw_status->last_policy_kind = convert_qos_policy(status.last_policy_id);
-  } else if (mask == dds_SAMPLE_LOST_STATUS) {
+  }
+  else if (mask == dds_SAMPLE_LOST_STATUS)
+  {
     dds_SampleLostStatus status;
     dds_ReturnCode_t dds_ret =
-      dds_DataReader_get_sample_lost_status(this->topic_reader, &status);
+        dds_DataReader_get_sample_lost_status(this->topic_reader, &status);
     rmw_ret_t rmw_ret = check_dds_ret_code(dds_ret);
-    if (rmw_ret != RMW_RET_OK) {
+    if (rmw_ret != RMW_RET_OK)
+    {
       return rmw_ret;
     }
 
     auto rmw_status = static_cast<rmw_message_lost_status_t *>(event);
     rmw_status->total_count = status.total_count;
     rmw_status->total_count_change = status.total_count_change;
-  } else {
+  }
+  else
+  {
     return RMW_RET_UNSUPPORTED;
   }
   return RMW_RET_OK;
 }
 
-dds_StatusCondition * GurumddsSubscriberInfo::get_statuscondition()
+dds_StatusCondition *GurumddsSubscriberInfo::get_statuscondition()
 {
   return dds_DataReader_get_statuscondition(this->topic_reader);
 }
@@ -155,33 +186,35 @@ dds_StatusMask GurumddsSubscriberInfo::get_status_changes()
 }
 
 static std::map<std::string, std::vector<uint8_t>>
-__parse_map(uint8_t * const data, const uint32_t data_len)
+__parse_map(uint8_t *const data, const uint32_t data_len)
 {
   std::vector<uint8_t> data_vec(data, data + data_len);
   std::map<std::string, std::vector<uint8_t>> map =
-    rmw::impl::cpp::parse_key_value(data_vec);
+      rmw::impl::cpp::parse_key_value(data_vec);
 
   return map;
 }
 
 static rmw_ret_t
 __get_user_data_key(
-  dds_ParticipantBuiltinTopicData * data,
-  const std::string key,
-  std::string & value,
-  bool & found)
+    dds_ParticipantBuiltinTopicData *data,
+    const std::string key,
+    std::string &value,
+    bool &found)
 {
   found = false;
-  uint8_t * user_data =
-    static_cast<uint8_t *>(data->user_data.value);
+  uint8_t *user_data =
+      static_cast<uint8_t *>(data->user_data.value);
   const uint32_t user_data_len = data->user_data.size;
-  if (nullptr == user_data || user_data_len == 0) {
+  if (nullptr == user_data || user_data_len == 0)
+  {
     return RMW_RET_OK;
   }
 
   auto map = __parse_map(user_data, user_data_len);
   auto name_found = map.find(key);
-  if (name_found != map.end()) {
+  if (name_found != map.end())
+  {
     value = std::string(name_found->second.begin(), name_found->second.end());
     found = true;
   }
@@ -190,16 +223,17 @@ __get_user_data_key(
 }
 
 void on_participant_changed(
-  const dds_DomainParticipant * a_participant,
-  const dds_ParticipantBuiltinTopicData * data,
-  dds_InstanceHandle_t handle)
+    const dds_DomainParticipant *a_participant,
+    const dds_ParticipantBuiltinTopicData *data,
+    dds_InstanceHandle_t handle)
 {
-  dds_DomainParticipant * participant = const_cast<dds_DomainParticipant *>(a_participant);
-  rmw_context_impl_t * ctx =
-    reinterpret_cast<rmw_context_impl_t *>(
-    dds_Entity_get_context(reinterpret_cast<dds_Entity *>(participant), 0));
+  dds_DomainParticipant *participant = const_cast<dds_DomainParticipant *>(a_participant);
+  rmw_context_impl_t *ctx =
+      reinterpret_cast<rmw_context_impl_t *>(
+          dds_Entity_get_context(reinterpret_cast<dds_Entity *>(participant), 0));
 
-  if (ctx == nullptr) {
+  if (ctx == nullptr)
+  {
     return;
   }
 
@@ -209,41 +243,48 @@ void on_participant_changed(
   memcpy(dp_guid.prefix, dp_guid_prefix.value, sizeof(dp_guid.prefix));
   dp_guid.entityId = ENTITYID_PARTICIPANT;
 
-  if (reinterpret_cast<void *>(handle) == NULL) {
+  if (reinterpret_cast<void *>(handle) == NULL)
+  {
     graph_remove_participant(ctx, &dp_guid);
-  } else {
+  }
+  else
+  {
     std::string enclave_str;
     bool enclave_found;
     dds_ReturnCode_t rc =
-      __get_user_data_key(
-      const_cast<dds_ParticipantBuiltinTopicData *>(data),
-      "securitycontext", enclave_str, enclave_found);
-    if (RMW_RET_OK != rc) {
+        __get_user_data_key(
+            const_cast<dds_ParticipantBuiltinTopicData *>(data),
+            "securitycontext", enclave_str, enclave_found);
+    if (RMW_RET_OK != rc)
+    {
       RMW_SET_ERROR_MSG("failed to parse user data for enclave");
     }
 
-    const char * enclave = nullptr;
-    if (enclave_found) {
+    const char *enclave = nullptr;
+    if (enclave_found)
+    {
       enclave = enclave_str.c_str();
     }
 
-    if (RMW_RET_OK != graph_add_participant(ctx, &dp_guid, enclave)) {
+    if (RMW_RET_OK != graph_add_participant(ctx, &dp_guid, enclave))
+    {
       RMW_SET_ERROR_MSG("failed to assert remote participant in graph");
     }
   }
 }
 
 void on_publication_changed(
-  const dds_DomainParticipant * a_participant,
-  const dds_PublicationBuiltinTopicData * data,
-  dds_InstanceHandle_t handle)
+    const dds_DomainParticipant *a_participant,
+    const dds_PublicationBuiltinTopicData *data,
+    dds_InstanceHandle_t handle)
 {
-  dds_DomainParticipant * participant = const_cast<dds_DomainParticipant *>(a_participant);
-  rmw_context_impl_t * ctx =
-    reinterpret_cast<rmw_context_impl_t *>(
-    dds_Entity_get_context(reinterpret_cast<dds_Entity *>(participant), 0));
+  dds_DomainParticipant *participant = const_cast<dds_DomainParticipant *>(a_participant);
+  rmw_context_impl_t *ctx =
+      reinterpret_cast<rmw_context_impl_t *>(
+          dds_Entity_get_context(reinterpret_cast<dds_Entity *>(participant), 0));
 
-  if (ctx == nullptr) {
+  if (ctx == nullptr)
+  {
     return;
   }
 
@@ -254,60 +295,79 @@ void on_publication_changed(
   dds_BuiltinTopicKey_to_GUID(&endp_guid_prefix, data->key);
   memcpy(&endp_guid.entityId, endp_guid_prefix.value, sizeof(endp_guid.entityId));
 
-  if (reinterpret_cast<void *>(handle) == NULL) {
+  if (reinterpret_cast<void *>(handle) == NULL)
+  {
     RCUTILS_LOG_DEBUG_NAMED(
-      "pub on data available",
-      "[ud] endp_gid=0x%08X.0x%08X.0x%08X.0x%08X ",
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
-      endp_guid.entityId);
+        "pub on data available",
+        "[ud] endp_gid=0x%08X.0x%08X.0x%08X.0x%08X ",
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
+        endp_guid.entityId);
     graph_remove_entity(ctx, &endp_guid, false);
-  } else {
+  }
+  else
+  {
     dds_GUID_t dp_guid;
     memcpy(dp_guid.prefix, dp_guid_prefix.value, sizeof(dp_guid.prefix));
     dp_guid.entityId = ENTITYID_PARTICIPANT;
+    // uint8_t* user_data_data = nullptr;
+    // size_t user_data_size = 0;
+    rosidl_type_hash_t type_hash;
+    
+    if (RMW_RET_OK != rmw_dds_common::parse_type_hash_from_user_data(
+                          data->user_data.value, data->user_data.size, type_hash))
+    {
+      
+      // RMW_CONNEXT_LOG_WARNING_A(
+      //     "Failed to parse type hash for topic '%s' with type '%s' from USER_DATA '%*s'.",
+      //     data->topic_name, data->type_name,`
+      //     static_cast<int>(user_data_size), reinterpret_cast<const char *>(user_data_data));
+      type_hash = rosidl_get_zero_initialized_type_hash();
+      rmw_reset_error();
+    }
 
     graph_add_remote_entity(
-      ctx,
-      &endp_guid,
-      &dp_guid,
-      data->topic_name,
-      data->type_name,
-      rosidl_get_zero_initialized_type_hash(),
-      &data->reliability,
-      &data->durability,
-      &data->deadline,
-      &data->liveliness,
-      &data->lifespan,
-      false);
+        ctx,
+        &endp_guid,
+        &dp_guid,
+        data->topic_name,
+        data->type_name,
+        type_hash,
+        &data->reliability,
+        &data->durability,
+        &data->deadline,
+        &data->liveliness,
+        &data->lifespan,
+        false);
 
     RCUTILS_LOG_DEBUG_NAMED(
-      "pub on data available",
-      "dp_gid=0x%08X.0x%08X.0x%08X.0x%08X, "
-      "gid=0x%08X.0x%08X.0x%08X.0x%08X, ",
-      reinterpret_cast<const uint32_t *>(dp_guid.prefix)[0],
-      reinterpret_cast<const uint32_t *>(dp_guid.prefix)[1],
-      reinterpret_cast<const uint32_t *>(dp_guid.prefix)[2],
-      dp_guid.entityId,
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
-      endp_guid.entityId);
+        "pub on data available",
+        "dp_gid=0x%08X.0x%08X.0x%08X.0x%08X, "
+        "gid=0x%08X.0x%08X.0x%08X.0x%08X, ",
+        reinterpret_cast<const uint32_t *>(dp_guid.prefix)[0],
+        reinterpret_cast<const uint32_t *>(dp_guid.prefix)[1],
+        reinterpret_cast<const uint32_t *>(dp_guid.prefix)[2],
+        dp_guid.entityId,
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
+        endp_guid.entityId);
   }
 }
 
 void on_subscription_changed(
-  const dds_DomainParticipant * a_participant,
-  const dds_SubscriptionBuiltinTopicData * data,
-  dds_InstanceHandle_t handle)
+    const dds_DomainParticipant *a_participant,
+    const dds_SubscriptionBuiltinTopicData *data,
+    dds_InstanceHandle_t handle)
 {
-  dds_DomainParticipant * participant = const_cast<dds_DomainParticipant *>(a_participant);
-  rmw_context_impl_t * ctx =
-    reinterpret_cast<rmw_context_impl_t *>(
-    dds_Entity_get_context(reinterpret_cast<dds_Entity *>(participant), 0));
+  dds_DomainParticipant *participant = const_cast<dds_DomainParticipant *>(a_participant);
+  rmw_context_impl_t *ctx =
+      reinterpret_cast<rmw_context_impl_t *>(
+          dds_Entity_get_context(reinterpret_cast<dds_Entity *>(participant), 0));
 
-  if (ctx == nullptr) {
+  if (ctx == nullptr)
+  {
     return;
   }
 
@@ -318,19 +378,35 @@ void on_subscription_changed(
   dds_BuiltinTopicKey_to_GUID(&endp_guid_prefix, data->key);
   memcpy(&endp_guid.entityId, endp_guid_prefix.value, sizeof(endp_guid.entityId));
 
-  if (reinterpret_cast<void *>(handle) == NULL) {
+  if (reinterpret_cast<void *>(handle) == NULL)
+  {
     RCUTILS_LOG_DEBUG_NAMED(
-      "sub on data available",
-      "[ud] endp_gid=0x%08X.0x%08X.0x%08X.0x%08X ",
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
-      endp_guid.entityId);
+        "sub on data available",
+        "[ud] endp_gid=0x%08X.0x%08X.0x%08X.0x%08X ",
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
+        endp_guid.entityId);
     graph_remove_entity(ctx, &endp_guid, false);
-  } else {
+  }
+  else
+  {
     dds_GUID_t dp_guid;
     memcpy(dp_guid.prefix, dp_guid_prefix.value, sizeof(dp_guid.prefix));
     dp_guid.entityId = ENTITYID_PARTICIPANT;
+    uint8_t* user_data_data = nullptr;
+    size_t user_data_size = 0;
+    rosidl_type_hash_t type_hash;
+    if (RMW_RET_OK != rmw_dds_common::parse_type_hash_from_user_data(
+                          user_data_data, user_data_size, type_hash))
+    {
+      // RMW_CONNEXT_LOG_WARNING_A(
+      //     "Failed to parse type hash for topic '%s' with type '%s' from USER_DATA '%*s'.",
+      //     data->topic_name, data->type_name,
+      //     static_cast<int>(user_data_size), reinterpret_cast<const char *>(user_data_data));
+      type_hash = rosidl_get_zero_initialized_type_hash();
+      rmw_reset_error();
+    }
 
     graph_add_remote_entity(
       ctx,
@@ -338,7 +414,7 @@ void on_subscription_changed(
       &dp_guid,
       data->topic_name,
       data->type_name,
-      rosidl_get_zero_initialized_type_hash(),
+      type_hash,
       &data->reliability,
       &data->durability,
       &data->deadline,
@@ -347,16 +423,16 @@ void on_subscription_changed(
       true);
 
     RCUTILS_LOG_DEBUG_NAMED(
-      "sub on data available",
-      "dp_gid=0x%08X.0x%08X.0x%08X.0x%08X, "
-      "gid=0x%08X.0x%08X.0x%08X.0x%08X, ",
-      reinterpret_cast<const uint32_t *>(dp_guid.prefix)[0],
-      reinterpret_cast<const uint32_t *>(dp_guid.prefix)[1],
-      reinterpret_cast<const uint32_t *>(dp_guid.prefix)[2],
-      dp_guid.entityId,
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
-      reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
-      endp_guid.entityId);
+        "sub on data available",
+        "dp_gid=0x%08X.0x%08X.0x%08X.0x%08X, "
+        "gid=0x%08X.0x%08X.0x%08X.0x%08X, ",
+        reinterpret_cast<const uint32_t *>(dp_guid.prefix)[0],
+        reinterpret_cast<const uint32_t *>(dp_guid.prefix)[1],
+        reinterpret_cast<const uint32_t *>(dp_guid.prefix)[2],
+        dp_guid.entityId,
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[0],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[1],
+        reinterpret_cast<const uint32_t *>(endp_guid.prefix)[2],
+        endp_guid.entityId);
   }
 }

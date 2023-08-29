@@ -26,6 +26,12 @@
 #include "rmw_gurumdds_cpp/rmw_publisher.hpp"
 #include "rmw_gurumdds_cpp/rmw_subscription.hpp"
 
+#include "rmw_dds_common/context.hpp"
+#include "rmw_dds_common/graph_cache.hpp"
+#include "rmw_dds_common/msg/participant_entities_info.hpp"
+#include "rmw_dds_common/qos.hpp"
+#include "rmw_dds_common/security.hpp"
+
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 
 static rmw_ret_t
@@ -184,8 +190,16 @@ __add_local_publisher(
   dds_Topic * topic = dds_DataWriter_get_topic(datawriter);
   const char * topic_name = dds_Topic_get_name(topic);
   const char * type_name = dds_Topic_get_type_name(topic);
+  auto ret = dds_DataWriter_get_qos(datawriter, dw_qos_ptr);
+  dds_UserDataQosPolicy user_data = dw_qos_ptr->user_data;
+  rosidl_type_hash_t type_hash;
 
-  dds_ReturnCode_t ret = dds_DataWriterQos_copy(&dw_qos, &dds_DATAWRITER_QOS_DEFAULT);
+   if (RMW_RET_OK != rmw_dds_common::parse_type_hash_from_user_data(
+                        user_data.value, user_data.size, type_hash)){
+                          RMW_SET_ERROR_MSG("Failed to parse typehash at at adding local publisher");
+                        }
+                        
+    // dds_ReturnCode_t ret = dds_DataWriterQos_copy(&dw_qos, &dds_DATAWRITER_QOS_DEFAULT);
   if (ret != dds_RETCODE_OK) {
     RMW_SET_ERROR_MSG("failed to initialize DataWriterQos");
     return RMW_RET_ERROR;
@@ -210,7 +224,7 @@ __add_local_publisher(
     &ctx->common_ctx.gid,
     topic_name,
     type_name,
-    rosidl_get_zero_initialized_type_hash(),
+    type_hash,
     &dw_qos.history,
     &dw_qos.reliability,
     &dw_qos.durability,
@@ -247,11 +261,20 @@ __add_local_subscriber(
 
   dds_DataReaderQos dr_qos;
   dds_DataReaderQos * dr_qos_ptr = &dr_qos;
+  rosidl_type_hash_t type_hash;
+ dds_UserDataQosPolicy user_data = dr_qos_ptr->user_data;
 
+   if (RMW_RET_OK != rmw_dds_common::parse_type_hash_from_user_data(
+                        user_data.value, user_data.size, type_hash))
+                        {
+                          RMW_SET_ERROR_MSG("Failed to parse typehash at at adding local publisher");
+                        }
   dds_Topic * topic =
     reinterpret_cast<dds_Topic *>(dds_DataReader_get_topicdescription(datareader));
   const char * topic_name = dds_Topic_get_name(topic);
   const char * type_name = dds_Topic_get_type_name(topic);
+  // rosidl_type_hash_t type_hash;
+  // type_hash = rmw_common::parse_data()
 
   dds_ReturnCode_t ret = dds_DataReaderQos_copy(&dr_qos, &dds_DATAREADER_QOS_DEFAULT);
   if (ret != dds_RETCODE_OK) {
@@ -278,7 +301,7 @@ __add_local_subscriber(
     &ctx->common_ctx.gid,
     topic_name,
     type_name,
-    rosidl_get_zero_initialized_type_hash(),
+    type_hash,
     &dr_qos.history,
     &dr_qos.reliability,
     &dr_qos.durability,
@@ -924,6 +947,8 @@ graph_add_remote_entity(
     /* Ignore own announcements */
     return RMW_RET_OK;
   }
+
+  
 
   if (RMW_RET_OK != __add_entity(
       ctx,

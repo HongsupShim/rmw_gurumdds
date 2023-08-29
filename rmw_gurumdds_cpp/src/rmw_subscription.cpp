@@ -39,6 +39,9 @@
 #include "rmw_gurumdds_cpp/rmw_subscription.hpp"
 #include "rmw_gurumdds_cpp/types.hpp"
 
+#include "rmw_dds_common/qos.hpp"
+#include "type_support_service.hpp"
+
 rmw_subscription_t *
 __rmw_create_subscription(
   rmw_context_impl_t * const ctx,
@@ -65,6 +68,13 @@ __rmw_create_subscription(
       return nullptr;
     }
   }
+  RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
+  rmw_qos_profile_t adapted_qos_policies = *qos_policies;
+  rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_subscription(
+    node, topic_name, &adapted_qos_policies, rmw_get_publishers_info_by_topic);
+  if (RMW_RET_OK != ret) {
+    return nullptr;
+  }
 
   rmw_subscription_t * rmw_subscription = nullptr;
   GurumddsSubscriberInfo * subscriber_info = nullptr;
@@ -84,7 +94,7 @@ __rmw_create_subscription(
   }
 
   std::string processed_topic_name = create_topic_name(
-    ros_topic_prefix, topic_name, "", qos_policies);
+    ros_topic_prefix, topic_name, "", adapted_qos_policies);
 
   std::string metastring =
     create_metastring(type_support->data, type_support->typesupport_identifier);
@@ -139,7 +149,9 @@ __rmw_create_subscription(
     }
   }
 
-  if (!get_datareader_qos(sub, qos_policies, &datareader_qos)) {
+  rosidl_type_hash_t type_hash;
+
+  if (!get_datareader_qos(sub, adapted_qos_policies, type_hash, &datareader_qos)) {
     // Error message already set
     return nullptr;
   }

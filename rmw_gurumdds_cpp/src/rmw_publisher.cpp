@@ -28,6 +28,8 @@
 #include "rmw/impl/cpp/macros.hpp"
 #include "rmw/types.h"
 #include "rmw/validate_full_topic_name.h"
+#include "rmw/get_topic_endpoint_info.h"
+#include "rmw_dds_common/qos.hpp"
 
 #include "rmw_gurumdds_cpp/gid.hpp"
 #include "rmw_gurumdds_cpp/graph_cache.hpp"
@@ -65,6 +67,15 @@ __rmw_create_publisher(
       return nullptr;
     }
   }
+RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
+rmw_qos_profile_t adapted_qos_policies = *qos_policies;
+rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
+    node, topic_name, &adapted_qos_policies, rmw_get_subscriptions_info_by_topic);
+  if (RMW_RET_OK != ret) {
+    return nullptr;
+  }
+
+
 
   rmw_publisher_t * rmw_publisher = nullptr;
   GurumddsPublisherInfo * publisher_info = nullptr;
@@ -73,7 +84,6 @@ __rmw_create_publisher(
   dds_Topic * topic = nullptr;
   dds_TopicDescription * topic_desc = nullptr;
   dds_TypeSupport * dds_typesupport = nullptr;
-  dds_ReturnCode_t ret;
 
   std::string type_name =
     create_type_name(type_support->data, type_support->typesupport_identifier);
@@ -137,8 +147,8 @@ __rmw_create_publisher(
       return nullptr;
     }
   }
-
-  if (!get_datawriter_qos(pub, qos_policies, &datawriter_qos)) {
+  rosidl_type_hash_t type_hash;
+  if (!get_datawriter_qos(pub, &adapted_qos_policies, type_hash, &datawriter_qos)) {
     // Error message already set
     return nullptr;
   }

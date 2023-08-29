@@ -18,18 +18,19 @@
 #include <cassert>
 #include <limits>
 
+#include "rosidl_runtime_c/type_hash.h"
 #include "rmw/error_handling.h"
 #include "rmw/types.h"
 #include "rmw/incompatible_qos_events_statuses.h"
 
 #include "rmw_gurumdds_cpp/dds_include.hpp"
 #include "rmw_gurumdds_cpp/visibility_control.h"
-
 RMW_GURUMDDS_CPP_PUBLIC
 bool
 get_datawriter_qos(
   dds_Publisher * publisher,
   const rmw_qos_profile_t * qos_profile,
+  const rosidl_type_hash_t& type_hash,
   dds_DataWriterQos * datawriter_qos);
 
 RMW_GURUMDDS_CPP_PUBLIC
@@ -37,6 +38,7 @@ bool
 get_datareader_qos(
   dds_Subscriber * subscriber,
   const rmw_qos_profile_t * qos_profile,
+  const rosidl_type_hash_t& type_hash,
   dds_DataReaderQos * datareader_qos);
 
 RMW_GURUMDDS_CPP_PUBLIC

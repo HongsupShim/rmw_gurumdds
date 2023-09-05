@@ -130,6 +130,9 @@ rmw_ret_t __detach_condition(
   return RMW_RET_OK;
 }
 
+
+
+
 template<typename SubscriberInfo, typename ServiceInfo, typename ClientInfo>
 rmw_ret_t
 __rmw_wait(
@@ -473,7 +476,7 @@ __rmw_wait(
 
   if (services != nullptr) {
     for (size_t i = 0; i < services->service_count; ++i) {
-      ServiceInfo * service_info = static_cast<ServiceInfo *>(services->services[i]);
+      ServiceInfo * service_info = static_cast<ServiceInfo*>(services->services[i]);
       if (service_info == nullptr) {
         RMW_SET_ERROR_MSG("service info handle is null");
         return RMW_RET_ERROR;

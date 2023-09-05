@@ -30,7 +30,6 @@
 #include "rmw/validate_full_topic_name.h"
 #include "rmw/get_topic_endpoint_info.h"
 #include "rmw_dds_common/qos.hpp"
-
 #include "rmw_gurumdds_cpp/gid.hpp"
 #include "rmw_gurumdds_cpp/graph_cache.hpp"
 #include "rmw_gurumdds_cpp/identifier.hpp"
@@ -66,7 +65,7 @@ __rmw_create_publisher(
       RMW_SET_ERROR_MSG("type support not from this implementation");
       return nullptr;
     }
-  }
+}
 RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
 rmw_qos_profile_t adapted_qos_policies = *qos_policies;
 rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
@@ -74,8 +73,6 @@ rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publish
   if (RMW_RET_OK != ret) {
     return nullptr;
   }
-
-
 
   rmw_publisher_t * rmw_publisher = nullptr;
   GurumddsPublisherInfo * publisher_info = nullptr;
@@ -181,7 +178,10 @@ rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publish
   entity_get_gid(
     reinterpret_cast<dds_Entity *>(publisher_info->topic_writer),
     publisher_info->publisher_gid);
-
+  
+  // dds_DataWriterListener listener = dds_DataWriter_get_listener(topic_writer);
+  // listener.on_publication_matched = on_pub_matched;
+  
   rmw_publisher = rmw_publisher_allocate();
   if (rmw_publisher == nullptr) {
     RMW_SET_ERROR_MSG("failed to allocate publisher");

@@ -47,4 +47,11 @@ bool is_event_supported(rmw_event_type_t event_t);
 RMW_GURUMDDS_CPP_PUBLIC
 rmw_ret_t check_dds_ret_code(dds_ReturnCode_t dds_return_code);
 
+// RMW_GURUMDDS_CPP_PUBLIC
+//  void RMW_GurumDDS_DataWriterListener_matched(
+//     void* listener_data,
+//     DDS_DataWriter* writer,
+//     const struct dds_PublicationMatchedStatus* status);
+
+
 #endif  // RMW_GURUMDDS_CPP__EVENT_CONVERTER_HPP_

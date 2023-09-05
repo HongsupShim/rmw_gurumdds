@@ -84,7 +84,6 @@ __rmw_create_subscription(
   dds_TopicDescription * topic_desc = nullptr;
   dds_ReadCondition * read_condition = nullptr;
   dds_TypeSupport * dds_typesupport = nullptr;
-  dds_ReturnCode_t ret;
 
   std::string type_name =
     create_type_name(type_support->data, type_support->typesupport_identifier);
@@ -94,7 +93,7 @@ __rmw_create_subscription(
   }
 
   std::string processed_topic_name = create_topic_name(
-    ros_topic_prefix, topic_name, "", adapted_qos_policies);
+    ros_topic_prefix, topic_name, "", &adapted_qos_policies);
 
   std::string metastring =
     create_metastring(type_support->data, type_support->typesupport_identifier);
@@ -151,7 +150,7 @@ __rmw_create_subscription(
 
   rosidl_type_hash_t type_hash;
 
-  if (!get_datareader_qos(sub, adapted_qos_policies, type_hash, &datareader_qos)) {
+  if (!get_datareader_qos(sub, &adapted_qos_policies, type_hash, &datareader_qos)) {
     // Error message already set
     return nullptr;
   }

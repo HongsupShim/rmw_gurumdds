@@ -69,15 +69,15 @@ rmw_create_service(
     if (ret != RMW_RET_OK) {
       return nullptr;
     }
-    rmw_qos_profile_t adapted_qos_policies =
-    rmw_dds_common::qos_profile_update_best_available_for_services(*qos_policies);
+   
     if (validation_result != RMW_TOPIC_VALID) {
       const char * reason = rmw_full_topic_name_validation_result_string(validation_result);
       RMW_SET_ERROR_MSG_WITH_FORMAT_STRING("service name is invalid: %s", reason);
       return nullptr;
     }
   }
-
+ rmw_qos_profile_t adapted_qos_policies =
+    rmw_dds_common::qos_profile_update_best_available_for_services(*qos_policies);
   const rosidl_service_type_support_t * type_support =
     get_service_typesupport_handle(type_supports, rosidl_typesupport_introspection_c__identifier);
   if (type_support == nullptr) {
@@ -262,7 +262,7 @@ rmw_create_service(
     }
   }
   rosidl_type_hash_t type_hash;
-  if (!get_datareader_qos(subscriber, adapted_qos_policies, type_hash, &datareader_qos)) {
+  if (!get_datareader_qos(subscriber, &adapted_qos_policies, type_hash, &datareader_qos)) {
     // Error message already set
     goto fail;
   }
@@ -289,7 +289,7 @@ rmw_create_service(
     goto fail;
   }
   service_info->read_condition = read_condition;
-  if (!get_datawriter_qos(publisher, adapted_qos_policies, type_hash, &datawriter_qos)) {
+  if (!get_datawriter_qos(publisher, &adapted_qos_policies, type_hash, &datawriter_qos)) {
     // Error message already set
     goto fail;
   }

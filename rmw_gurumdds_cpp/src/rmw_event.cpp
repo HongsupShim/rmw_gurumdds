@@ -76,6 +76,13 @@ extern "C"
         event_type);
   }
 
+  void update_matched(int32_t total_count,
+                      int32_t total_count_change,
+                      int32_t current_count,
+                      int32_t current_count_change)
+  {
+  }
+
   rmw_ret_t
   rmw_take_event(
       const rmw_event_t *event_handle,
@@ -99,18 +106,32 @@ extern "C"
       *taken = (ret_code == RMW_RET_OK);
       return ret_code;
     }
+  }
 
-    rmw_ret_t
-    rmw_event_set_callback(
-        rmw_event_t * rmw_event,
-        rmw_event_callback_t callback,
-        const void *user_data)
-    {
-      (void)rmw_event;
-      (void)callback;
-      (void)user_data;
+  rmw_ret_t
+  rmw_event_set_callback(
+      rmw_event_t *rmw_event,
+      rmw_event_callback_t callback,
+      const void *user_data)
+  {
+    (void)rmw_event;
+    (void)callback;
+    (void)user_data;
 
-      RMW_SET_ERROR_MSG("rmw_event_set_callback not implemented");
-      return RMW_RET_UNSUPPORTED;
-    }
-  } // extern "C"
+    RMW_SET_ERROR_MSG("rmw_event_set_callback not implemented");
+    return RMW_RET_UNSUPPORTED;
+  }
+
+} // extern "C"
+
+void on_sub_matched(_dds_DataReader *self, const dds_SubscriptionMatchedStatus *status)
+{
+  dds_SubscriptionMatchedStatus set_status;
+  auto ret = dds_DataReader_get_subscription_matched_status(self, &set_status);
+}
+
+void on_pub_matched(const _dds_DataWriter *self, const dds_PublicationMatchedStatus *status)
+{
+  dds_PublicationMatchedStatus set_status;
+  auto ret = dds_DataWriter_get_publication_matched_status((_dds_DataWriter*)self, &set_status);
+}

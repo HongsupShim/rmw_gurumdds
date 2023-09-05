@@ -35,46 +35,50 @@
 #include "rmw_gurumdds_cpp/visibility_control.h"
 
 void on_participant_changed(
-  const dds_DomainParticipant * a_participant,
-  const dds_ParticipantBuiltinTopicData * data,
-  dds_InstanceHandle_t handle);
+    const dds_DomainParticipant *a_participant,
+    const dds_ParticipantBuiltinTopicData *data,
+    dds_InstanceHandle_t handle);
 
 void on_publication_changed(
-  const dds_DomainParticipant * a_participant,
-  const dds_PublicationBuiltinTopicData * data,
-  dds_InstanceHandle_t handle);
+    const dds_DomainParticipant *a_participant,
+    const dds_PublicationBuiltinTopicData *data,
+    dds_InstanceHandle_t handle);
 
 void on_subscription_changed(
-  const dds_DomainParticipant * a_participant,
-  const dds_SubscriptionBuiltinTopicData * data,
-  dds_InstanceHandle_t handle);
+    const dds_DomainParticipant *a_participant,
+    const dds_SubscriptionBuiltinTopicData *data,
+    dds_InstanceHandle_t handle);
+
+void on_sub_matched(_dds_DataReader *self, const dds_SubscriptionMatchedStatus *status);
+
+void on_pub_matched(const _dds_DataWriter* self, const dds_PublicationMatchedStatus* status);
 
 typedef struct _GurumddsWaitSetInfo
 {
-  dds_WaitSet * wait_set;
-  dds_ConditionSeq * active_conditions;
-  dds_ConditionSeq * attached_conditions;
+  dds_WaitSet *wait_set;
+  dds_ConditionSeq *active_conditions;
+  dds_ConditionSeq *attached_conditions;
 } GurumddsWaitSetInfo;
 
 typedef struct _GurumddsEventInfo
 {
   virtual ~_GurumddsEventInfo() = default;
-  virtual rmw_ret_t get_status(const dds_StatusMask mask, void * event) = 0;
-  virtual dds_StatusCondition * get_statuscondition() = 0;
+  virtual rmw_ret_t get_status(const dds_StatusMask mask, void *event) = 0;
+  virtual dds_StatusCondition *get_statuscondition() = 0;
   virtual dds_StatusMask get_status_changes() = 0;
 } GurumddsEventInfo;
 
 typedef struct _GurumddsPublisherInfo : GurumddsEventInfo
 {
   rmw_gid_t publisher_gid;
-  dds_DataWriter * topic_writer;
-  const rosidl_message_type_support_t * rosidl_message_typesupport;
-  const char * implementation_identifier;
+  dds_DataWriter *topic_writer;
+  const rosidl_message_type_support_t *rosidl_message_typesupport;
+  const char *implementation_identifier;
   int64_t sequence_number;
-  rmw_context_impl_t * ctx;
+  rmw_context_impl_t *ctx;
 
-  rmw_ret_t get_status(dds_StatusMask mask, void * event) override;
-  dds_StatusCondition * get_statuscondition() override;
+  rmw_ret_t get_status(dds_StatusMask mask, void *event) override;
+  dds_StatusCondition *get_statuscondition() override;
   dds_StatusMask get_status_changes() override;
 } GurumddsPublisherInfo;
 
@@ -86,29 +90,29 @@ typedef struct _GurumddsPublisherGID
 typedef struct _GurumddsSubscriberInfo : GurumddsEventInfo
 {
   rmw_gid_t subscriber_gid;
-  dds_DataReader * topic_reader;
-  dds_ReadCondition * read_condition;
-  const rosidl_message_type_support_t * rosidl_message_typesupport;
-  const char * implementation_identifier;
-  rmw_context_impl_t * ctx;
+  dds_DataReader *topic_reader;
+  dds_ReadCondition *read_condition;
+  const rosidl_message_type_support_t *rosidl_message_typesupport;
+  const char *implementation_identifier;
+  rmw_context_impl_t *ctx;
 
-  rmw_ret_t get_status(dds_StatusMask mask, void * event) override;
-  dds_StatusCondition * get_statuscondition() override;
+  rmw_ret_t get_status(dds_StatusMask mask, void *event) override;
+  dds_StatusCondition *get_statuscondition() override;
   dds_StatusMask get_status_changes() override;
 } GurumddsSubscriberInfo;
 
 typedef struct _GurumddsClientInfo
 {
-  const rosidl_service_type_support_t * service_typesupport;
+  const rosidl_service_type_support_t *service_typesupport;
 
   rmw_gid_t publisher_gid;
   rmw_gid_t subscriber_gid;
-  dds_DataWriter * request_writer;
-  dds_DataReader * response_reader;
-  dds_ReadCondition * read_condition;
+  dds_DataWriter *request_writer;
+  dds_DataReader *response_reader;
+  dds_ReadCondition *read_condition;
 
-  const char * implementation_identifier;
-  rmw_context_impl_t * ctx;
+  const char *implementation_identifier;
+  rmw_context_impl_t *ctx;
 
   int64_t sequence_number;
   uint8_t writer_guid[16];
@@ -116,16 +120,16 @@ typedef struct _GurumddsClientInfo
 
 typedef struct _GurumddsServiceInfo
 {
-  const rosidl_service_type_support_t * service_typesupport;
+  const rosidl_service_type_support_t *service_typesupport;
 
   rmw_gid_t publisher_gid;
   rmw_gid_t subscriber_gid;
-  dds_DataWriter * response_writer;
-  dds_DataReader * request_reader;
-  dds_ReadCondition * read_condition;
+  dds_DataWriter *response_writer;
+  dds_DataReader *request_reader;
+  dds_ReadCondition *read_condition;
 
-  const char * implementation_identifier;
-  rmw_context_impl_t * ctx;
+  const char *implementation_identifier;
+  rmw_context_impl_t *ctx;
 } GurumddsServiceInfo;
 
-#endif  // RMW_GURUMDDS_CPP__TYPES_HPP_
+#endif // RMW_GURUMDDS_CPP__TYPES_HPP_

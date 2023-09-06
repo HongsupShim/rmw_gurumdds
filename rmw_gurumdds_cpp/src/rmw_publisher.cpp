@@ -68,11 +68,11 @@ __rmw_create_publisher(
 }
 RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
 // rmw_qos_profile_t adapted_qos_policies = *qos_policies;
-rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
-    node, topic_name, qos_policies, rmw_get_subscriptions_info_by_topic);
-  if (RMW_RET_OK != ret) {
-    return nullptr;
-  }
+// rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
+//     node, topic_name, qos_policies, rmw_get_subscriptions_info_by_topic);
+//   if (RMW_RET_OK != ret) {
+//     return nullptr;
+//   }
 
   rmw_publisher_t * rmw_publisher = nullptr;
   GurumddsPublisherInfo * publisher_info = nullptr;
@@ -105,7 +105,7 @@ rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publish
     return nullptr;
   }
 
-  ret = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
+  rmw_ret_t ret = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
   if (ret != dds_RETCODE_OK) {
     RMW_SET_ERROR_MSG("failed to register type to domain participant");
     return nullptr;

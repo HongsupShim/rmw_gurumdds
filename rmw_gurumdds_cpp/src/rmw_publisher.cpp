@@ -67,9 +67,9 @@ __rmw_create_publisher(
     }
 }
 RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
-rmw_qos_profile_t adapted_qos_policies = *qos_policies;
+// rmw_qos_profile_t adapted_qos_policies = *qos_policies;
 rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
-    node, topic_name, &adapted_qos_policies, rmw_get_subscriptions_info_by_topic);
+    node, topic_name, qos_policies, rmw_get_subscriptions_info_by_topic);
   if (RMW_RET_OK != ret) {
     return nullptr;
   }
@@ -145,7 +145,7 @@ rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publish
     }
   }
   rosidl_type_hash_t type_hash;
-  if (!get_datawriter_qos(pub, &adapted_qos_policies, type_hash, &datawriter_qos)) {
+  if (!get_datawriter_qos(pub, qos_policies, type_hash, &datawriter_qos)) {
     // Error message already set
     return nullptr;
   }

@@ -65,14 +65,7 @@ __rmw_create_publisher(
       RMW_SET_ERROR_MSG("type support not from this implementation");
       return nullptr;
     }
-}
-RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
-// rmw_qos_profile_t adapted_qos_policies = *qos_policies;
-// rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
-//     node, topic_name, qos_policies, rmw_get_subscriptions_info_by_topic);
-//   if (RMW_RET_OK != ret) {
-//     return nullptr;
-//   }
+  }
 
   rmw_publisher_t * rmw_publisher = nullptr;
   GurumddsPublisherInfo * publisher_info = nullptr;
@@ -81,6 +74,7 @@ RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
   dds_Topic * topic = nullptr;
   dds_TopicDescription * topic_desc = nullptr;
   dds_TypeSupport * dds_typesupport = nullptr;
+  dds_ReturnCode_t ret;
 
   std::string type_name =
     create_type_name(type_support->data, type_support->typesupport_identifier);
@@ -105,7 +99,7 @@ RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
     return nullptr;
   }
 
-  rmw_ret_t ret = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
+  ret = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
   if (ret != dds_RETCODE_OK) {
     RMW_SET_ERROR_MSG("failed to register type to domain participant");
     return nullptr;
@@ -144,8 +138,11 @@ RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
       return nullptr;
     }
   }
+
   rosidl_type_hash_t type_hash;
-  if (!get_datawriter_qos(pub, qos_policies, type_hash, &datawriter_qos)) {
+
+  if (!get_datawriter_qos(pub, qos_policies, type_hash, &datawriter_qos))
+  {
     // Error message already set
     return nullptr;
   }
@@ -178,10 +175,7 @@ RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
   entity_get_gid(
     reinterpret_cast<dds_Entity *>(publisher_info->topic_writer),
     publisher_info->publisher_gid);
-  
-  // dds_DataWriterListener listener = dds_DataWriter_get_listener(topic_writer);
-  // listener.on_publication_matched = on_pub_matched;
-  
+
   rmw_publisher = rmw_publisher_allocate();
   if (rmw_publisher == nullptr) {
     RMW_SET_ERROR_MSG("failed to allocate publisher");
@@ -225,6 +219,192 @@ RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
   scope_exit_rmw_publisher_delete.cancel();
   return rmw_publisher;
 }
+
+// rmw_publisher_t *
+// __rmw_create_publisher(
+//   rmw_context_impl_t * const ctx,
+//   const rmw_node_t * node,
+//   dds_DomainParticipant * const participant,
+//   dds_Publisher * const pub,
+//   const rosidl_message_type_support_t * type_supports,
+//   const char * topic_name,
+//   const rmw_qos_profile_t * qos_policies,
+//   const rmw_publisher_options_t * publisher_options,
+//   const bool internal)
+// {
+//   std::lock_guard<std::mutex> guard(ctx->endpoint_mutex);
+
+//   const rosidl_message_type_support_t * type_support =
+//     get_message_typesupport_handle(type_supports, rosidl_typesupport_introspection_c__identifier);
+//   if (type_support == nullptr) {
+//     rcutils_reset_error();
+//     type_support = get_message_typesupport_handle(
+//       type_supports, rosidl_typesupport_introspection_cpp::typesupport_identifier);
+//     if (type_support == nullptr) {
+//       rcutils_reset_error();
+//       RMW_SET_ERROR_MSG("type support not from this implementation");
+//       return nullptr;
+//     }
+// }
+// RMW_CHECK_ARGUMENT_FOR_NULL(qos_policies, nullptr);
+// // rmw_qos_profile_t adapted_qos_policies = *qos_policies;
+// // rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
+// //     node, topic_name, qos_policies, rmw_get_subscriptions_info_by_topic);
+// //   if (RMW_RET_OK != ret) {
+// //     return nullptr;
+// //   }
+
+//   rmw_publisher_t * rmw_publisher = nullptr;
+//   GurumddsPublisherInfo * publisher_info = nullptr;
+//   dds_DataWriter * topic_writer = nullptr;
+//   dds_DataWriterQos datawriter_qos;
+//   dds_Topic * topic = nullptr;
+//   dds_TopicDescription * topic_desc = nullptr;
+//   dds_TypeSupport * dds_typesupport = nullptr;
+
+//   std::string type_name =
+//     create_type_name(type_support->data, type_support->typesupport_identifier);
+//   if (type_name.empty()) {
+//     // Error message is already set
+//     return nullptr;
+//   }
+
+//   std::string processed_topic_name = create_topic_name(
+//     ros_topic_prefix, topic_name, "", qos_policies);
+
+//   std::string metastring =
+//     create_metastring(type_support->data, type_support->typesupport_identifier);
+//   if (metastring.empty()) {
+//     // Error message is already set
+//     return nullptr;
+//   }
+
+//   dds_typesupport = dds_TypeSupport_create(metastring.c_str());
+//   if (dds_typesupport == nullptr) {
+//     RMW_SET_ERROR_MSG("failed to create typesupport");
+//     return nullptr;
+//   }
+
+//   rmw_ret_t ret = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
+//   if (ret != dds_RETCODE_OK) {
+//     RMW_SET_ERROR_MSG("failed to register type to domain participant");
+//     return nullptr;
+//   }
+
+//   topic_desc = dds_DomainParticipant_lookup_topicdescription(
+//     participant, processed_topic_name.c_str());
+//   if (topic_desc == nullptr) {
+//     dds_TopicQos topic_qos;
+//     ret = dds_DomainParticipant_get_default_topic_qos(participant, &topic_qos);
+//     if (ret != dds_RETCODE_OK) {
+//       RMW_SET_ERROR_MSG("failed to get default topic qos");
+//       return nullptr;
+//     }
+
+//     topic = dds_DomainParticipant_create_topic(
+//       participant, processed_topic_name.c_str(), type_name.c_str(), &topic_qos, nullptr, 0);
+//     if (topic == nullptr) {
+//       RMW_SET_ERROR_MSG("failed to create topic");
+//       dds_TopicQos_finalize(&topic_qos);
+//       return nullptr;
+//     }
+
+//     ret = dds_TopicQos_finalize(&topic_qos);
+//     if (ret != dds_RETCODE_OK) {
+//       RMW_SET_ERROR_MSG("failed to finalize topic qos");
+//       return nullptr;
+//     }
+//   } else {
+//     dds_Duration_t timeout;
+//     timeout.sec = 0;
+//     timeout.nanosec = 1;
+//     topic = dds_DomainParticipant_find_topic(participant, processed_topic_name.c_str(), &timeout);
+//     if (topic == nullptr) {
+//       RMW_SET_ERROR_MSG("failed to find topic");
+//       return nullptr;
+//     }
+//   }
+//   rosidl_type_hash_t type_hash;
+//   if (!get_datawriter_qos(pub, qos_policies, type_hash, &datawriter_qos)) {
+//     // Error message already set
+//     return nullptr;
+//   }
+
+//   topic_writer = dds_Publisher_create_datawriter(pub, topic, &datawriter_qos, nullptr, 0);
+//   if (topic_writer == nullptr) {
+//     RMW_SET_ERROR_MSG("failed to create datawriter");
+//     dds_DataWriterQos_finalize(&datawriter_qos);
+//     return nullptr;
+//   }
+
+//   ret = dds_DataWriterQos_finalize(&datawriter_qos);
+//   if (ret != dds_RETCODE_OK) {
+//     RMW_SET_ERROR_MSG("failed to finalize datawriter qos");
+//     return nullptr;
+//   }
+
+//   publisher_info = new(std::nothrow) GurumddsPublisherInfo();
+//   if (publisher_info == nullptr) {
+//     RMW_SET_ERROR_MSG("failed to allocate GurumddsPublisherInfo");
+//     return nullptr;
+//   }
+
+//   publisher_info->topic_writer = topic_writer;
+//   publisher_info->rosidl_message_typesupport = type_support;
+//   publisher_info->implementation_identifier = RMW_GURUMDDS_ID;
+//   publisher_info->sequence_number = 0;
+//   publisher_info->ctx = ctx;
+
+//   entity_get_gid(
+//     reinterpret_cast<dds_Entity *>(publisher_info->topic_writer),
+//     publisher_info->publisher_gid);
+  
+//   // dds_DataWriterListener listener = dds_DataWriter_get_listener(topic_writer);
+//   // listener.on_publication_matched = on_pub_matched;
+  
+//   rmw_publisher = rmw_publisher_allocate();
+//   if (rmw_publisher == nullptr) {
+//     RMW_SET_ERROR_MSG("failed to allocate publisher");
+//     return nullptr;
+//   }
+//   rmw_publisher->topic_name = nullptr;
+
+//   auto scope_exit_rmw_publisher_delete = rcpputils::make_scope_exit(
+//     [rmw_publisher]() {
+//       if (rmw_publisher->topic_name != nullptr) {
+//         rmw_free(const_cast<char *>(rmw_publisher->topic_name));
+//       }
+//       rmw_publisher_free(rmw_publisher);
+//     });
+
+//   rmw_publisher->implementation_identifier = RMW_GURUMDDS_ID;
+//   rmw_publisher->data = publisher_info;
+//   rmw_publisher->topic_name =
+//     reinterpret_cast<const char *>(rmw_allocate(strlen(topic_name) + 1));
+//   if (rmw_publisher->topic_name == nullptr) {
+//     RCUTILS_LOG_ERROR_NAMED(RMW_GURUMDDS_ID, "failed to allocate publisher's topic name");
+//     return nullptr;
+//   }
+//   memcpy(
+//     const_cast<char *>(rmw_publisher->topic_name),
+//     topic_name,
+//     strlen(topic_name) + 1);
+//   rmw_publisher->options = *publisher_options;
+//   rmw_publisher->can_loan_messages = false;
+
+//   if (!internal) {
+//     if (graph_on_publisher_created(ctx, node, publisher_info) != RMW_RET_OK) {
+//       RCUTILS_LOG_ERROR_NAMED(RMW_GURUMDDS_ID, "failed to update graph for publisher");
+//       return nullptr;
+//     }
+//   }
+
+//   dds_TypeSupport_delete(dds_typesupport);
+//   dds_typesupport = nullptr;
+
+//   scope_exit_rmw_publisher_delete.cancel();
+//   return rmw_publisher;
+// }
 
 rmw_ret_t
 __rmw_destroy_publisher(

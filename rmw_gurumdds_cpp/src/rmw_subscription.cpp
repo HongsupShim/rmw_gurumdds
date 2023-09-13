@@ -72,7 +72,7 @@ __rmw_create_subscription(
   rmw_qos_profile_t adapted_qos_policies = *qos_policies;
   rmw_ret_t ret = rmw_dds_common::qos_profile_get_best_available_for_topic_subscription(
     node, topic_name, &adapted_qos_policies, rmw_get_publishers_info_by_topic);
-  if (RMW_RET_OK != ret) {
+  if (RMW_RET_OK != ret) {//패치했을 때 여기서 오류가 발생함.
     return nullptr;
   }
 

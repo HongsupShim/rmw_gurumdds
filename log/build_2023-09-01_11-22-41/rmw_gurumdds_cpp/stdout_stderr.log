@@ -1,0 +1,123 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/names_and_types_helpers.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/get_entities.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/message_converter.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/demangle.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/namespace_prefix.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_compare_gids_equal.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_guard_condition.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_init.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_node_info_and_types.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_serialize.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_qos.cpp.o[0m
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:17[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DataWriter[m[K’ has not been declared
+   53 |     [01;31m[KDDS_DataWriter[m[K* writer,
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:54:18:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[Kdds_PublicationMatchedStatus[m[K’ after ‘[01m[Kstruct[m[K’
+   54 |     const struct [01;31m[Kdds_PublicationMatchedStatus[m[K* status);
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp:18[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:22[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:17[m[K:
+[01m[K/usr/include/gurumdds/dcps.h:220:3:[m[K [01;36m[Knote: [m[K‘[01m[Kdds_PublicationMatchedStatus[m[K’ has a previous declaration here
+  220 | } [01;36m[Kdds_PublicationMatchedStatus[m[K;
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:17[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:[m[K In function ‘[01m[Kdds_StatusKind get_status_kind_from_rmw(rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:74:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_mask_map[m[K’ was not declared in this scope
+   74 |   int bit = [01;31m[Kg_mask_map[m[K[static_cast<int>(event_t)];
+      |             [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:90: CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:19[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDDS_DataWriter[m[K’ has not been declared
+   53 |     [01;31m[KDDS_DataWriter[m[K* writer,
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:54:18:[m[K [01;31m[Kerror: [m[Kusing typedef-name ‘[01m[Kdds_PublicationMatchedStatus[m[K’ after ‘[01m[Kstruct[m[K’
+   54 |     const struct [01;31m[Kdds_PublicationMatchedStatus[m[K* status);
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp:18[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:22[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:19[m[K:
+[01m[K/usr/include/gurumdds/dcps.h:220:3:[m[K [01;36m[Knote: [m[K‘[01m[Kdds_PublicationMatchedStatus[m[K’ has a previous declaration here
+  220 | } [01;36m[Kdds_PublicationMatchedStatus[m[K;
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:19[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_publisher_event_init(rmw_event_t*, const rmw_publisher_t*, rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRMW_GURUMDDS_ID[m[K’ was not declared in this scope
+   58 |         [01;31m[KRMW_GURUMDDS_ID[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_subscription_event_init(rmw_event_t*, const rmw_subscription_t*, rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRMW_GURUMDDS_ID[m[K’ was not declared in this scope
+   72 |         [01;31m[KRMW_GURUMDDS_ID[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid update_matched(int32_t, int32_t, int32_t, int32_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:79:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |   void update_matched([01;35m[Kint32_t total_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:80:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   80 |                       [01;35m[Kint32_t total_count_change[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:81:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   81 |                       [01;35m[Kint32_t current_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:82:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |                       [01;35m[Kint32_t current_count_change[m[K)
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/ros2_iron/install/rmw/include/rmw/rmw/impl/cpp/macros.hpp:23[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:17[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:101:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRMW_GURUMDDS_ID[m[K’ was not declared in this scope
+  101 |         [01;31m[KRMW_GURUMDDS_ID[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:117:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  117 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:127:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  127 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:135:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  135 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:143:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  143 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:148:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  148 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K At global scope:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:155:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  155 |   }[01;31m[K [m[K// extern "C"
+      |    [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:50:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   50 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:155:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  155 |   [01;35m[K}[m[K // extern "C"
+      |   [01;35m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K At global scope:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:24:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Krmw_ret_t init_rmw_event(const char*, rmw_event_t*, const char*, void*, rmw_event_type_t)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   24 | [01;35m[Kinit_rmw_event[m[K(
+      | [01;35m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:230: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o] Error 1
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:193:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_DataWriterListener[m[K’ {aka ‘[01m[Kstruct _dds_DataWriterListener[m[K’} has no member named ‘[01m[Kon_publication_changed[m[K’; did you mean ‘[01m[Kon_publication_matched[m[K’?
+  193 |   listener.[01;31m[Kon_publication_changed[m[K =
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |            [32m[Kon_publication_matched[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

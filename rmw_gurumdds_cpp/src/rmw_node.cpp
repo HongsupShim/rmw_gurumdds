@@ -81,16 +81,20 @@ __rmw_create_node(
   rmw_context_impl_t * ctx = context->impl;
   std::lock_guard<std::mutex> guard(ctx->initialization_mutex);
 
+  
+
   if (ctx->is_shutdown) {
     RMW_SET_ERROR_MSG("context is already shutdown");
     return nullptr;
   }
 
-  ret = ctx->initialize_node(namespace_, name, node_localhost_only);
+    ret = ctx->initialize_node(namespace_, name, node_localhost_only);
   if (ret != RMW_RET_OK) {
     RCUTILS_LOG_ERROR_NAMED(RMW_GURUMDDS_ID, "failed to initialize node in context");
     return nullptr;
   }
+
+  
 
   auto context_finalize = rcpputils::make_scope_exit(
     [ctx]()
@@ -124,7 +128,6 @@ __rmw_create_node(
     return nullptr;
   }
   memcpy(const_cast<char *>(node_handle->name), name, strlen(name) + 1);
-
   node_handle->namespace_ =
     static_cast<const char *>(rmw_allocate(sizeof(char) * strlen(namespace_) + 1));
   if (node_handle->namespace_ == nullptr) {
@@ -132,7 +135,7 @@ __rmw_create_node(
     return nullptr;
   }
   memcpy(const_cast<char *>(node_handle->namespace_), namespace_, strlen(namespace_) + 1);
-
+  
   node_handle->implementation_identifier = implementation_identifier;
   node_handle->data = nullptr;
   node_handle->context = context;
@@ -270,7 +273,7 @@ rmw_create_node(
     context->implementation_identifier,
     RMW_GURUMDDS_ID,
     return nullptr);
-  return __rmw_create_node(
+    return  __rmw_create_node(
     RMW_GURUMDDS_ID, context, name, namespace_);
 }
 

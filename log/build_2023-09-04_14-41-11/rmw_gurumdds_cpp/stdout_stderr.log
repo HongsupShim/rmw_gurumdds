@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:184:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_pub_matched[m[K’ was not declared in this scope
+  184 |   listener.on_publication_matched = [01;31m[Kon_pub_matched[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

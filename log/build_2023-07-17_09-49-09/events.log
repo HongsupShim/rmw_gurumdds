@@ -1,0 +1,43 @@
+[0.000000] (-) TimerEvent: {}
+[0.000558] (gurumdds_cmake_module) JobQueued: {'identifier': 'gurumdds_cmake_module', 'dependencies': OrderedDict()}
+[0.000723] (rmw_gurumdds_cpp) JobQueued: {'identifier': 'rmw_gurumdds_cpp', 'dependencies': OrderedDict([('gurumdds_cmake_module', '/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module')])}
+[0.000743] (gurumdds_cmake_module) JobStarted: {'identifier': 'gurumdds_cmake_module'}
+[0.007215] (gurumdds_cmake_module) JobProgress: {'identifier': 'gurumdds_cmake_module', 'progress': 'cmake'}
+[0.007409] (gurumdds_cmake_module) Command: {'cmd': ['/usr/bin/cmake', '/home/gurum/gurumnet/rmw_gurumdds/gurumdds_cmake_module', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module'], 'cwd': '/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module', 'env': OrderedDict([('SHELL', '/bin/bash'), ('SESSION_MANAGER', 'local/hongsup:@/tmp/.ICE-unix/2238,unix/hongsup:/tmp/.ICE-unix/2238'), ('QT_ACCESSIBILITY', '1'), ('COLORTERM', 'truecolor'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('DOTNET_ROOT', '/usr/lib/dotnet'), ('LC_NAME', 'ko_KR.UTF-8'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XMODIFIERS', '@im=ibus'), ('DESKTOP_SESSION', 'ubuntu'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('GTK_MODULES', 'gail:atk-bridge'), ('PWD', '/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('LOGNAME', 'gurum'), ('XDG_SESSION_TYPE', 'wayland'), ('SYSTEMD_EXEC_PID', '3381'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJM81'), ('HOME', '/home/gurum'), ('USERNAME', 'gurum'), ('IM_CONFIG_PHASE', '1'), ('LANG', 'en_US.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('VTE_VERSION', '6800'), ('WAYLAND_DISPLAY', 'wayland-0'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72bdf139_e809_4550_9a59_3e14710b4e62'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/gurum/.cache/dotnet_bundle_extract'), ('GNOME_SETUP_DISPLAY', ':1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('XDG_SESSION_CLASS', 'user'), ('COLCON', '1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('TERM', 'xterm-256color'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'gurum'), ('GURUMNET_LICENSE_PATH', '/home/gurum/gurumnet/License'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('DISPLAY', ':0'), ('SHLVL', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_MESSAGES', 'POSIX'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_TIME', 'ko_KR.UTF-8'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PATH', '/home/gurum/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/gurum/.dotnet/tools'), ('GDMSESSION', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GURUMNET_ACTIVATION_DIR', '/home/gurum/gurumnet/License'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('OLDPWD', '/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp'), ('_', '/usr/bin/env')]), 'shell': False}
+[0.061844] (gurumdds_cmake_module) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.098838] (gurumdds_cmake_module) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.099979] (-) TimerEvent: {}
+[0.105517] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.145351] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.150638] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.150898] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.151330] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.153847] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.198935] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.200041] (-) TimerEvent: {}
+[0.204433] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.204612] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.204946] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.211074] (gurumdds_cmake_module) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:8 (find_package):\n'}
+[0.211259] (gurumdds_cmake_module) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.211313] (gurumdds_cmake_module) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.211358] (gurumdds_cmake_module) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.211403] (gurumdds_cmake_module) StderrLine: {'line': b'\n'}
+[0.211445] (gurumdds_cmake_module) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.211488] (gurumdds_cmake_module) StderrLine: {'line': b'  any of the following names:\n'}
+[0.211529] (gurumdds_cmake_module) StderrLine: {'line': b'\n'}
+[0.211571] (gurumdds_cmake_module) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.211613] (gurumdds_cmake_module) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.211669] (gurumdds_cmake_module) StderrLine: {'line': b'\n'}
+[0.211711] (gurumdds_cmake_module) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.211753] (gurumdds_cmake_module) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.211795] (gurumdds_cmake_module) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.211836] (gurumdds_cmake_module) StderrLine: {'line': b'  has been installed.\n'}
+[0.211876] (gurumdds_cmake_module) StderrLine: {'line': b'\n'}
+[0.211918] (gurumdds_cmake_module) StderrLine: {'line': b'\x1b[0m\n'}
+[0.211959] (gurumdds_cmake_module) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.212007] (gurumdds_cmake_module) StdoutLine: {'line': b'See also "/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module/CMakeFiles/CMakeOutput.log".\n'}
+[0.213200] (gurumdds_cmake_module) CommandEnded: {'returncode': 1}
+[0.233285] (gurumdds_cmake_module) JobEnded: {'identifier': 'gurumdds_cmake_module', 'rc': 1}
+[0.243702] (rmw_gurumdds_cpp) JobSkipped: {'identifier': 'rmw_gurumdds_cpp'}
+[0.243734] (-) EventReactorShutdown: {}

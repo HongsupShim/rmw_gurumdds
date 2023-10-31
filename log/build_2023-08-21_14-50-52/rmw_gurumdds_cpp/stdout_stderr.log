@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:[m[K In function ‘[01m[Krmw_ret_t __add_local_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DataWriter*, rmw_gid_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:198:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct dds_UserDataQosPolicy[m[K’ has no member named ‘[01m[Kuser_data[m[K’
+  198 |                         user_data.[01;31m[Kuser_data[m[K.value, user_data.user_data.size, type_hash))
+      |                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:198:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct dds_UserDataQosPolicy[m[K’ has no member named ‘[01m[Kuser_data[m[K’
+  198 |                         user_data.user_data.value, user_data.[01;31m[Kuser_data[m[K.size, type_hash))
+      |                                                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:200:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  200 |     dds_ReturnCode_t [01;35m[Kret[m[K = dds_DataWriterQos_copy(&dw_qos, &dds_DATAWRITER_QOS_DEFAULT);
+      |                      [01;35m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:524: CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

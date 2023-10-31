@@ -1,0 +1,23 @@
+[0.009s] Invoking command in '/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake /home/gurum/gurumnet/rmw_gurumdds/gurumdds_cmake_module -CMAKE_BUILD_TYPE=Debug -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module
+[0.013s] loading initial cache file MAKE_BUILD_TYPE=Debug
+[0.013s] [0mCMake Error: Error processing file: /home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module/MAKE_BUILD_TYPE=Debug[0m
+[0.016s] -- Found ament_cmake: 2.0.3 (/home/gurum/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+[0.119s] Traceback (most recent call last):
+[0.119s]   File "/home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.119s]     from ament_package.templates import get_environment_hook_template_path
+[0.119s] ModuleNotFoundError: No module named 'ament_package'
+[0.127s] [31mCMake Error at /home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.128s]   execute_process(/usr/bin/python3.10
+[0.128s]   /home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.128s]   /home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module/ament_cmake_package_templates/templates.cmake)
+[0.128s]   returned error code 1
+[0.128s] Call Stack (most recent call first):
+[0.128s]   /home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.128s]   /home/gurum/ros2_iron/install/ament_cmake/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.128s]   /home/gurum/ros2_iron/install/ament_cmake/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.128s]   CMakeLists.txt:8 (find_package)
+[0.128s] 
+[0.128s] [0m
+[0.128s] -- Configuring incomplete, errors occurred!
+[0.128s] See also "/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module/CMakeFiles/CMakeOutput.log".
+[0.130s] Invoked command in '/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module' returned '1': _=/usr/bin/env /usr/bin/cmake /home/gurum/gurumnet/rmw_gurumdds/gurumdds_cmake_module -CMAKE_BUILD_TYPE=Debug -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module

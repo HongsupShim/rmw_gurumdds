@@ -1,0 +1,21 @@
+[0.009s] Invoking command in '/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake /home/gurum/gurumnet/rmw_gurumdds/gurumdds_cmake_module -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module
+[0.021s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.021s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.021s]   has asked CMake to find a package configuration file provided by
+[0.021s]   "ament_cmake", but CMake did not find one.
+[0.021s] 
+[0.021s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.021s]   any of the following names:
+[0.021s] 
+[0.021s]     ament_cmakeConfig.cmake
+[0.021s]     ament_cmake-config.cmake
+[0.021s] 
+[0.021s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.021s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.021s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.021s]   has been installed.
+[0.021s] 
+[0.021s] [0m
+[0.021s] -- Configuring incomplete, errors occurred!
+[0.021s] See also "/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module/CMakeFiles/CMakeOutput.log".
+[0.022s] Invoked command in '/home/gurum/gurumnet/rmw_gurumdds/build/gurumdds_cmake_module' returned '1': _=/usr/bin/env /usr/bin/cmake /home/gurum/gurumnet/rmw_gurumdds/gurumdds_cmake_module -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module

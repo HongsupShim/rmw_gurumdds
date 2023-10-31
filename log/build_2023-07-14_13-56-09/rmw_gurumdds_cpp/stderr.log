@@ -1,0 +1,11 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:127:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+  127 |   } [01;31m[Kelse[m[K {
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:97:53:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   97 |   if (is_event_supported(event_handle->event_type)) [01;36m[K{[m[K
+      |                                                     [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:230: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

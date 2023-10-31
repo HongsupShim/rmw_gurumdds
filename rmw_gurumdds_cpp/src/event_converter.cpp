@@ -62,27 +62,10 @@ static const dds_StatusKind g_mask_map[]{
 
 dds_StatusKind get_status_kind_from_rmw(const rmw_event_type_t event_t)
 {
-  // printf("event_t : %d\n", event_t);
-  printf("DO SOME TETS!!\n");
   if (!is_event_supported(event_t))
   {
     return 0;
   }
-  printf("what is the event type : %d\n", event_t);
-
-  int mask = 8192;
-  int bit = g_mask_map[static_cast<int>(event_t)];
-  printf("value is %d\n", bit);
-  if(bit & mask)
-  {
-    printf("Bit Operation TRUE\n");
-  }
-  else
-  {
-    
-    printf("Bit Operation FALSE\n");
-  }
-  
 
   return g_mask_map[static_cast<int>(event_t)];
 }

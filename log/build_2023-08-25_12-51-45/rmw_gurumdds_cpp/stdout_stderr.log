@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:[m[K In function ‘[01m[Kbool set_entity_qos_from_profile_generic(const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_EntityQos*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:156:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kresize[m[K’
+  156 |   entity_qos->user_data()[01;31m[Kr[m[K[32m[Kesize[m[K(user_data.size());
+      |                          [01;31m[K^[m[K[32m[K~~~~~[m[K
+      |                          [32m[K;[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:157:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KsetValue[m[K’
+  157 |   entity_qos->user_data()[01;31m[Ks[m[K[32m[KetValue[m[K(user_data);
+      |                          [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+      |                          [32m[K;[m[K
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp: In instantiation of ‘[01m[Kbool set_entity_qos_from_profile_generic(const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_EntityQos*) [with dds_EntityQos = dds_DataWriterQos; rmw_qos_profile_t = rmw_qos_profile_s; rosidl_type_hash_t = rosidl_type_hash_s][m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:179:38:[m[K   required from here
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:156:24:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(dds_UserDataQosPolicy) ()[m[K’
+  156 |   [01;31m[Kentity_qos->user_data()[m[Kresize(user_data.size());
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:157:24:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(dds_UserDataQosPolicy) ()[m[K’
+  157 |   [01;31m[Kentity_qos->user_data()[m[KsetValue(user_data);
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp: In instantiation of ‘[01m[Kbool set_entity_qos_from_profile_generic(const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_EntityQos*) [with dds_EntityQos = dds_DataReaderQos; rmw_qos_profile_t = rmw_qos_profile_s; rosidl_type_hash_t = rosidl_type_hash_s][m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:196:38:[m[K   required from here
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:156:24:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(dds_UserDataQosPolicy) ()[m[K’
+  156 |   [01;31m[Kentity_qos->user_data()[m[Kresize(user_data.size());
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:157:24:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(dds_UserDataQosPolicy) ()[m[K’
+  157 |   [01;31m[Kentity_qos->user_data()[m[KsetValue(user_data);
+      |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:174: CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o[0m

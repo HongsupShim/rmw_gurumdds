@@ -1,0 +1,45 @@
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid update_matched(int32_t, int32_t, int32_t, int32_t)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:79:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |   void update_matched([01;35m[Kint32_t total_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:80:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   80 |                       [01;35m[Kint32_t total_count_change[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:81:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   81 |                       [01;35m[Kint32_t current_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:82:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |                       [01;35m[Kint32_t current_count_change[m[K)
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid on_sub_matched(_dds_DataReader*, const dds_SubscriptionMatchedStatus*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:130:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  130 |   auto [01;35m[Kret[m[K = dds_DataReader_get_subscription_matched_status(self, &set_status);
+      |        [01;35m[K^~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:127:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  127 | void on_sub_matched(_dds_DataReader *self, [01;35m[Kconst dds_SubscriptionMatchedStatus *status[m[K)
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid on_pub_matched(const _dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:136:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  136 |   auto [01;35m[Kret[m[K = dds_DataWriter_get_publication_matched_status((_dds_DataWriter*)self, &set_status);
+      |        [01;35m[K^~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:133:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  133 | void on_pub_matched(const _dds_DataWriter *self, [01;35m[Kconst dds_PublicationMatchedStatus *status[m[K)
+      |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:109:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  109 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:96:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kadapted_qos_policies[m[K’ was not declared in this scope
+   96 |     ros_topic_prefix, topic_name, "", &[01;31m[Kadapted_qos_policies[m[K);
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:111:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kret[m[K’ was not declared in this scope
+  111 |   [01;31m[Kret[m[K = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
+      |   [01;31m[K^~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:53:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqos_policies[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   53 |   [01;35m[Kconst rmw_qos_profile_t * qos_policies[m[K,
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

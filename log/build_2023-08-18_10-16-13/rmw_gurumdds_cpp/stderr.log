@@ -1,0 +1,23 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:[m[K In function ‘[01m[Kvoid on_subscription_changed(const dds_DomainParticipant*, const dds_SubscriptionBuiltinTopicData*, dds_InstanceHandle_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:409:28:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Krmw_ret_t graph_add_remote_entity(rmw_context_impl_t*, const dds_GUID_t*, const dds_GUID_t*, const char*, const char*, const rosidl_type_hash_t&, const dds_ReliabilityQosPolicy*, const dds_DurabilityQosPolicy*, const dds_DeadlineQosPolicy*, const dds_LivelinessQosPolicy*, const dds_LifespanQosPolicy*, bool)[m[K’
+  409 |     [01;31m[Kgraph_add_remote_entity([m[K
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  410 | [01;31m[K      ctx,[m[K
+      |       [01;31m[K~~~~[m[K                  
+  411 | [01;31m[K      &endp_guid,[m[K
+      |       [01;31m[K~~~~~~~~~~~[m[K           
+  412 | [01;31m[K      &dp_guid,[m[K
+      |       [01;31m[K~~~~~~~~~[m[K             
+  413 | [01;31m[K      data->topic_name,[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~[m[K     
+  414 | [01;31m[K      data->type_name,[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~[m[K      
+  415 | [01;31m[K      type_hash)[m[K,
+      |       [01;31m[K~~~~~~~~~~[m[K            
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:19[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/graph_cache.hpp:109:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  109 | [01;36m[Kgraph_add_remote_entity[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:552: CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

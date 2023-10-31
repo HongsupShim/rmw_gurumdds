@@ -1,0 +1,38 @@
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:[m[K In function ‘[01m[Krmw_ret_t graph_cache_initialize(rmw_context_impl_t*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:340:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Krmw_ret_t[m[K’ {aka ‘[01m[Kint[m[K’} in return
+  340 |     return [01;31m[Knullptr[m[K;
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:354:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kname[m[K’ was not declared in this scope; did you mean ‘[01m[Krosidl_generator_traits::name[m[K’?
+  354 |   node_handle->name = static_cast<const char *>(rmw_allocate(sizeof(char) * strlen([01;31m[Kname[m[K) + 1));
+      |                                                                                    [01;31m[K^~~~[m[K
+      |                                                                                    [32m[Krosidl_generator_traits::name[m[K
+In file included from [01m[K/home/gurum/ros2_iron/build/rmw_dds_common/rosidl_generator_cpp/rmw_dds_common/msg/detail/gid__traits.hpp:15[m[K,
+                 from [01m[K/home/gurum/ros2_iron/build/rmw_dds_common/rosidl_generator_cpp/rmw_dds_common/msg/gid.hpp:9[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw_dds_common/include/rmw_dds_common/rmw_dds_common/gid_utils.hpp:21[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw_dds_common/include/rmw_dds_common/rmw_dds_common/graph_cache.hpp:33[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw_dds_common/include/rmw_dds_common/rmw_dds_common/context.hpp:24[m[K,
+                 from [01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp:37[m[K,
+                 from [01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:25[m[K:
+[01m[K/home/gurum/ros2_iron/src/ros2/rosidl/rosidl_runtime_cpp/include/rosidl_runtime_cpp/traits.hpp:156:21:[m[K [01;36m[Knote: [m[K‘[01m[Krosidl_generator_traits::name[m[K’ declared here
+  156 | inline const char * [01;36m[Kname[m[K();
+      |                     [01;36m[K^~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:357:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Krmw_ret_t[m[K’ {aka ‘[01m[Kint[m[K’} in return
+  357 |     return [01;31m[Knullptr[m[K;
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:362:66:[m[K [01;31m[Kerror: [m[K‘[01m[Knamespace_[m[K’ was not declared in this scope
+  362 |     static_cast<const char *>(rmw_allocate(sizeof(char) * strlen([01;31m[Knamespace_[m[K) + 1));
+      |                                                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:365:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Krmw_ret_t[m[K’ {aka ‘[01m[Kint[m[K’} in return
+  365 |     return [01;31m[Knullptr[m[K;
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:369:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kimplementation_identifier[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_get_implementation_identifier[m[K’?
+  369 |   node_handle->implementation_identifier = [01;31m[Kimplementation_identifier[m[K;
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                            [32m[Krmw_get_implementation_identifier[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:371:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontext[m[K’ was not declared in this scope
+  371 |   node_handle->context = [01;31m[Kcontext[m[K;
+      |                          [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:524: CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:87:20:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdds_ReturnCode_t ret[m[K’
+   87 |   dds_ReturnCode_t [01;31m[Kret[m[K;
+      |                    [01;31m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:73:13:[m[K [01;36m[Knote: [m[K‘[01m[Krmw_ret_t ret[m[K’ previously declared here
+   73 |   rmw_ret_t [01;36m[Kret[m[K = rmw_dds_common::qos_profile_get_best_available_for_topic_subscription(
+      |             [01;36m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:192:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kupdate_publication_status_matched[m[K’ was not declared in this scope
+  192 |   listener.on_publication_matched = [01;31m[Kupdate_publication_status_matched[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

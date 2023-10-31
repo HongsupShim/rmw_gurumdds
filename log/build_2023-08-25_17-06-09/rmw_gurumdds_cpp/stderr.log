@@ -1,0 +1,40 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:70:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Krmw_ret_t[m[K’
+   70 |   [01;31m[Krmw_ret_t[m[K ret = rmw_dds_common::qos_profile_get_best_available_for_topic_subscription(
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:[m[K In function ‘[01m[Krmw_service_t* rmw_create_service(const rmw_node_t*, const rosidl_service_type_support_t*, const char*, const rmw_qos_profile_t*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:72:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kadapted_qos_policies[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   72 |     rmw_qos_profile_t [01;35m[Kadapted_qos_policies[m[K =
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:72:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kret[m[K’ was not declared in this scope
+   72 |   if (RMW_RET_OK != [01;31m[Kret[m[K) {
+      |                     [01;31m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:94:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kadapted_qos_policies[m[K’ was not declared in this scope; did you mean ‘[01m[Kadapted_qos_profiles[m[K’?
+   94 |     ros_topic_prefix, topic_name, "", [01;31m[Kadapted_qos_policies[m[K);
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                       [32m[Kadapted_qos_profiles[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:141:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kadapted_qos_policies[m[K’ was not declared in this scope
+  141 |     ros_service_requester_prefix, service_name, "Request", [01;31m[Kadapted_qos_policies[m[K);
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:87:20:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdds_ReturnCode_t ret[m[K’
+   87 |   dds_ReturnCode_t [01;31m[Kret[m[K;
+      |                    [01;31m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:72:11:[m[K [01;36m[Knote: [m[K‘[01m[Krmw_ret_t ret[m[K’ previously declared here
+   72 | rmw_ret_t [01;36m[Kret[m[K = rmw_dds_common::qos_profile_get_best_available_for_topic_publisher(
+      |           [01;36m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:152:32:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+  152 |   if (!get_datawriter_qos(pub, [01;31m[Kadapted_qos_policies[m[K, type_hash, &datawriter_qos)) {
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                [01;31m[K|[m[K
+      |                                [01;31m[Krmw_qos_profile_t {aka rmw_qos_profile_s}[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:39[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:32:29:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kbool get_datawriter_qos(dds_Publisher*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataWriterQos*)[m[K’
+   32 |   [01;36m[Kconst rmw_qos_profile_t * qos_profile[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:440: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

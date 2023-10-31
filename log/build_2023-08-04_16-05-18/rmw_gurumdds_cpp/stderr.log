@@ -1,0 +1,5 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeCache.txt is different than the directory /home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:[m[K In function ‘[01m[Kdds_StatusKind get_status_kind_from_rmw(rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:89:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   89 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

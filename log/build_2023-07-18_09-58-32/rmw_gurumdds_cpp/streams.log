@@ -1,0 +1,26 @@
+[0.006s] Invoking command in '/home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp': AMENT_PREFIX_PATH=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --build /home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp -- -j16 -l16
+[0.023s] -- Found ament_cmake_ros: 0.11.2 (/home/gurum/ros2_iron/install/ament_cmake_ros/share/ament_cmake_ros/cmake)
+[0.122s] Traceback (most recent call last):
+[0.122s]   File "/home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.122s]     from ament_package.templates import get_environment_hook_template_path
+[0.122s] ModuleNotFoundError: No module named 'ament_package'
+[0.129s] [31mCMake Error at /home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.129s]   execute_process(/usr/bin/python3.10
+[0.129s]   /home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.129s]   /home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp/ament_cmake_package_templates/templates.cmake)
+[0.129s]   returned error code 1
+[0.129s] Call Stack (most recent call first):
+[0.129s]   /home/gurum/ros2_iron/install/ament_cmake_core/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.129s]   /home/gurum/ros2_iron/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_cmake_test-extras.cmake:39 (find_package)
+[0.130s]   /home/gurum/ros2_iron/install/ament_cmake_test/share/ament_cmake_test/cmake/ament_cmake_testConfig.cmake:41 (include)
+[0.130s]   /home/gurum/ros2_iron/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake/ament_cmake_pytest-extras.cmake:17 (find_package)
+[0.130s]   /home/gurum/ros2_iron/install/ament_cmake_pytest/share/ament_cmake_pytest/cmake/ament_cmake_pytestConfig.cmake:41 (include)
+[0.130s]   /home/gurum/ros2_iron/install/ament_cmake_ros/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake:19 (find_package)
+[0.130s]   /home/gurum/ros2_iron/install/ament_cmake_ros/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake:41 (include)
+[0.130s]   CMakeLists.txt:13 (find_package)
+[0.130s] 
+[0.130s] [0m
+[0.130s] -- Configuring incomplete, errors occurred!
+[0.130s] See also "/home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/CMakeOutput.log".
+[0.131s] gmake: *** [Makefile:1212: cmake_check_build_system] Error 1
+[0.132s] Invoked command in '/home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp' returned '2': AMENT_PREFIX_PATH=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/gurumnet/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --build /home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp -- -j16 -l16

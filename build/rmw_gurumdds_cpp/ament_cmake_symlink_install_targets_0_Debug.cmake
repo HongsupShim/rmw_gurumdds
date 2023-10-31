@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/librmw_gurumdds_cpp.so" "TARGETS" "rmw_gurumdds_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

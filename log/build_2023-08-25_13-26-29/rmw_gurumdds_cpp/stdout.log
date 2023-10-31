@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o[0m

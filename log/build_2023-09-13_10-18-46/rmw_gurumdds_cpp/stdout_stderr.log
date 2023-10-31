@@ -1,0 +1,155 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.11.2 (/home/gurum/ros2_iron/install/ament_cmake_ros/share/ament_cmake_ros/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rcpputils: 2.6.1 (/home/gurum/ros2_iron/install/rcpputils/share/rcpputils/cmake)
+-- Found gurumdds_cmake_module: 5.0.0 (/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/cmake)
+-- Found GurumDDS:/usr/share/gurumdds/cmake/../../..
+-- Found rosidl_typesupport_introspection_c: 4.0.0 (/home/gurum/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/cmake)
+-- Found rosidl_typesupport_introspection_cpp: 4.0.0 (/home/gurum/ros2_iron/install/rosidl_typesupport_introspection_cpp/share/rosidl_typesupport_introspection_cpp/cmake)
+-- Found rmw: 7.1.0 (/home/gurum/ros2_iron/install/rmw/share/rmw/cmake)
+-- Found rmw_dds_common: 2.0.1 (/home/gurum/ros2_iron/install/rmw_dds_common/share/rmw_dds_common/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found ament_lint_auto: 0.14.1 (/home/gurum/ros2_iron/install/ament_lint_auto/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/message_converter.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/get_entities.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/identifier.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/names_and_types_helpers.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/demangle.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/namespace_prefix.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_count.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_compare_gids_equal.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_get_network_flow_endpoints.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_get_implementation_identifier.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_features.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_get_topic_endpoint_info.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_get_serialization_format.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_guard_condition.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_init.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_logging.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_node_info_and_types.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_node.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_qos.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_serialize.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service_names_and_types.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o[0m
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid update_matched(int32_t, int32_t, int32_t, int32_t)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:79:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |   void update_matched([01;35m[Kint32_t total_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:80:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   80 |                       [01;35m[Kint32_t total_count_change[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:81:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   81 |                       [01;35m[Kint32_t current_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:82:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |                       [01;35m[Kint32_t current_count_change[m[K)
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid on_sub_matched(_dds_DataReader*, const dds_SubscriptionMatchedStatus*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:130:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  130 |   auto [01;35m[Kret[m[K = dds_DataReader_get_subscription_matched_status(self, &set_status);
+      |        [01;35m[K^~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:127:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  127 | void on_sub_matched(_dds_DataReader *self, [01;35m[Kconst dds_SubscriptionMatchedStatus *status[m[K)
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid on_pub_matched(const _dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:136:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  136 |   auto [01;35m[Kret[m[K = dds_DataWriter_get_publication_matched_status((_dds_DataWriter*)self, &set_status);
+      |        [01;35m[K^~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:133:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  133 | void on_pub_matched(const _dds_DataWriter *self, [01;35m[Kconst dds_PublicationMatchedStatus *status[m[K)
+      |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:109:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  109 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[ 75%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_topic_names_and_types.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_wait.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_context_impl.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/context_listener_thread.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/serialization_format.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_dynamic_message_type_support.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library librmw_gurumdds_cpp.so[0m
+[100%] Built target rmw_gurumdds_cpp
+-- Install configuration: "Debug"
+-- Execute custom install script
+-- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/library_path.sh
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/library_path.dsv
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/rmw_typesupport_c/rmw_gurumdds_cpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/rmw_typesupport_cpp/rmw_gurumdds_cpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/rmw_typesupport/rmw_gurumdds_cpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/package_run_dependencies/rmw_gurumdds_cpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/parent_prefix_path/rmw_gurumdds_cpp
+-- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/ament_prefix_path.sh
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/path.sh
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/path.dsv
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.bash
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.sh
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.zsh
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.dsv
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.dsv
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/packages/rmw_gurumdds_cpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/rmw_gurumdds_cpp-extras.cmake
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/rmw_gurumdds_cppConfig.cmake
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/rmw_gurumdds_cppConfig-version.cmake
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.xml
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/context_listener_thread.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/demangle.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/get_entities.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/gid.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/graph_cache.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/guid.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/identifier.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/namespace_prefix.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_dynamic_message_type_support.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_publisher.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_qos.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_subscription.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_wait.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/serialization_format.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/types.hpp
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/visibility_control.h
+-- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib/librmw_gurumdds_cpp.so

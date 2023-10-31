@@ -1,0 +1,3 @@
+-- Found ament_cmake: 2.0.3 (/home/gurum/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+-- Configuring incomplete, errors occurred!
+See also "/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module/CMakeFiles/CMakeOutput.log".

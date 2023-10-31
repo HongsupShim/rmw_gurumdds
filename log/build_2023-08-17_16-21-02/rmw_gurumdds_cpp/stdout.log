@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o[0m

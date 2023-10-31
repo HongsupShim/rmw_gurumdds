@@ -1,0 +1,2 @@
+Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module -- -j16 -l16
+Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module' returned '2': _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module -- -j16 -l16

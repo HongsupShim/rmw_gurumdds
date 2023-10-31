@@ -1,0 +1,55 @@
+[0.006s] Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp -- -j16 -l16
+[0.046s] [  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[0.867s] [  5%] [32m[1mLinking CXX shared library librmw_gurumdds_cpp.so[0m
+[1.046s] [100%] Built target rmw_gurumdds_cpp
+[1.054s] Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp' returned '0': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp -- -j16 -l16
+[1.118s] Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp
+[1.121s] -- Install configuration: "Debug"
+[1.122s] -- Execute custom install script
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/library_path.sh
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/library_path.dsv
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/rmw_typesupport_c/rmw_gurumdds_cpp
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/rmw_typesupport_cpp/rmw_gurumdds_cpp
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/rmw_typesupport/rmw_gurumdds_cpp
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/package_run_dependencies/rmw_gurumdds_cpp
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/parent_prefix_path/rmw_gurumdds_cpp
+[1.122s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/ament_prefix_path.sh
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/ament_prefix_path.dsv
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/path.sh
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/environment/path.dsv
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.bash
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.sh
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.zsh
+[1.123s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/local_setup.dsv
+[1.123s] -- Symlinking: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.dsv
+[1.128s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/ament_index/resource_index/packages/rmw_gurumdds_cpp
+[1.128s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.128s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/ament_cmake_export_libraries-extras.cmake
+[1.128s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.128s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/rmw_gurumdds_cpp-extras.cmake
+[1.128s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/rmw_gurumdds_cppConfig.cmake
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/cmake/rmw_gurumdds_cppConfig-version.cmake
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.xml
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/context_listener_thread.hpp
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/demangle.hpp
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/get_entities.hpp
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/gid.hpp
+[1.129s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/graph_cache.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/guid.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/identifier.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/namespace_prefix.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_dynamic_message_type_support.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_publisher.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_qos.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_subscription.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_wait.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/serialization_format.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/types.hpp
+[1.130s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/visibility_control.h
+[1.131s] -- Up-to-date symlink: /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib/librmw_gurumdds_cpp.so
+[1.137s] Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp' returned '0': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp

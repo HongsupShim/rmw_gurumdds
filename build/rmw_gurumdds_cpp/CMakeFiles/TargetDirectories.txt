@@ -1,0 +1,10 @@
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/uninstall.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/rmw_gurumdds_cpp_uninstall.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/rmw_gurumdds_cpp.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/test.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/edit_cache.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/rebuild_cache.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/list_install_components.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/install.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/install/local.dir
+/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeFiles/install/strip.dir

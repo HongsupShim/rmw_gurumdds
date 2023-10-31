@@ -1,0 +1,4 @@
+Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module -- -j16 -l16
+Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module' returned '0': _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module -- -j16 -l16
+Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module
+Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module' returned '0': _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module

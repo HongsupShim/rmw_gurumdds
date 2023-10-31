@@ -333,11 +333,55 @@ graph_cache_initialize(rmw_context_impl_t * const ctx)
     rmw_dds_common::msg::ParticipantEntitiesInfo>();
 
   const char * const topic_name_partinfo = "ros_discovery_info";
+  //node hanlde to deliever node info for creating publisher and subscriber
+   rmw_node_t * node_handle = rmw_node_allocate();
+  if (node_handle == nullptr) {
+    RMW_SET_ERROR_MSG("failed to allocate memory for node handle");
+    return RMW_RET_BAD_ALLOC;
+  }
+  
+  auto cleanup_node = rcpputils::make_scope_exit(
+      [node_handle]()
+      {
+        if (node_handle->name != nullptr)
+        {
+          rmw_free(const_cast<char *>(node_handle->name));
+        }
+        if (node_handle->namespace_ != nullptr)
+        {
+          rmw_free(const_cast<char *>(node_handle->namespace_));
+        }
+        rmw_node_free(node_handle);
+      });
+
+  constexpr char node_name[] = "my_test_node";
+  constexpr char node_namespace[] = "/my_test_ns";
+
+  node_handle->name = static_cast<const char *>(rmw_allocate(sizeof(char) * strlen(node_name) + 1));
+  if (node_handle->name == nullptr) {
+    RMW_SET_ERROR_MSG("failed to allocate memory for node name");
+    return RMW_RET_BAD_ALLOC;
+  }
+  memcpy(const_cast<char *>(node_handle->name), node_name, strlen(node_name) + 1);
+
+  node_handle->namespace_ =
+    static_cast<const char *>(rmw_allocate(sizeof(char) * strlen(node_namespace) + 1));
+  if (node_handle->namespace_ == nullptr) {
+    RMW_SET_ERROR_MSG("failed to allocate memory for node namespace");
+    return RMW_RET_BAD_ALLOC;
+  }
+  memcpy(const_cast<char *>(node_handle->namespace_), node_namespace, strlen(node_namespace) + 1);
+
+  rmw_context_t* context = ctx->base;
+  node_handle->implementation_identifier = context->implementation_identifier;
+  node_handle->data = nullptr;
+  node_handle->context = context;
 
   ctx->common_ctx.pub =
     __rmw_create_publisher(
     ctx,
-    nullptr,
+    // nullptr, /*node*/
+    node_handle,
     ctx->participant,
     ctx->publisher,
     type_supports_partinfo,
@@ -355,16 +399,17 @@ graph_cache_initialize(rmw_context_impl_t * const ctx)
   qos.history = RMW_QOS_POLICY_HISTORY_KEEP_ALL;
 
   ctx->common_ctx.sub =
-    __rmw_create_subscription(
-    ctx,
-    nullptr,
-    ctx->participant,
-    ctx->subscriber,
-    type_supports_partinfo,
-    topic_name_partinfo,
-    &qos,
-    &subscription_options,
-    true);
+      __rmw_create_subscription(
+          ctx,
+          node_handle, /*node*/
+          // nullptr,
+          ctx->participant,
+          ctx->subscriber,
+          type_supports_partinfo,
+          topic_name_partinfo,
+          &qos,
+          &subscription_options,
+          true);
 
   if (ctx->common_ctx.sub == nullptr) {
     RCUTILS_LOG_ERROR_NAMED(
@@ -374,6 +419,7 @@ graph_cache_initialize(rmw_context_impl_t * const ctx)
 
   ctx->common_ctx.graph_guard_condition =
     rmw_create_guard_condition(ctx->base);
+    
   if (ctx->common_ctx.graph_guard_condition == nullptr) {
     RMW_SET_ERROR_MSG("failed to create graph guard condition");
     return RMW_RET_BAD_ALLOC;
@@ -387,6 +433,7 @@ graph_cache_initialize(rmw_context_impl_t * const ctx)
         RMW_SET_ERROR_MSG("failed to trigger graph cache on_change_callback");
       }
     });
+    
 
   entity_get_gid(reinterpret_cast<dds_Entity *>(ctx->participant), ctx->common_ctx.gid);
   std::string dp_enclave = ctx->base->options.enclave;
@@ -494,7 +541,6 @@ graph_on_node_created(
       ctx->common_ctx.gid, node->name, node->namespace_));
     return RMW_RET_ERROR;
   }
-
   return RMW_RET_OK;
 }
 

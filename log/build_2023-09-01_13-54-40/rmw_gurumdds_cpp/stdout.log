@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_compare_gids_equal.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/get_entities.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_node.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_context_impl.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/context_listener_thread.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_wait.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_dynamic_message_type_support.cpp.o[0m

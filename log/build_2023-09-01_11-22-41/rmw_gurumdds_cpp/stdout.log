@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/names_and_types_helpers.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/get_entities.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/message_converter.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/demangle.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/namespace_prefix.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_compare_gids_equal.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_guard_condition.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_init.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_node_info_and_types.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_serialize.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_qos.cpp.o[0m

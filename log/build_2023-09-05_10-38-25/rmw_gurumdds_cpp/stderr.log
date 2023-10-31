@@ -1,0 +1,4 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:182:26:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klistener[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  182 |   dds_DataWriterListener [01;35m[Klistener[m[K = dds_DataWriter_get_listener(topic_writer);
+      |                          [01;35m[K^~~~~~~~[m[K

@@ -349,7 +349,7 @@ rmw_context_impl_t::finalize()
     {
       RMW_SET_ERROR_MSG("failed to delete DomainParticipant");
       return RMW_RET_ERROR;
-    }
+    } 
     this->participant = nullptr;
   }
 

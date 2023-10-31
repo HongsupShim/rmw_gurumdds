@@ -1,0 +1,87 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krosidl_type_hash_t[m[K’ does not name a type
+   58 |   const [01;31m[Krosidl_type_hash_t[m[K& type_hash,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:[m[K In function ‘[01m[Kbool set_entity_qos_from_profile_generic(const rmw_qos_profile_t*, const int&, dds_EntityQos*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:139:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  139 |   std::[01;31m[Kstring[m[K user_data_str;
+      |        [01;31m[K^~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:20:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+   19 | #include "rmw_gurumdds_cpp/qos.hpp"
+  +++ |+[32m[K#include <string>[m[K
+   20 | 
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:140:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kencode_type_hash_for_user_data_qos[m[K’ is not a member of ‘[01m[Krmw_dds_common[m[K’
+  140 |   if (RMW_RET_OK != rmw_dds_common::[01;31m[Kencode_type_hash_for_user_data_qos[m[K(type_hash, user_data_str)) {
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:140:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kuser_data_str[m[K’ was not declared in this scope
+  140 |   if (RMW_RET_OK != rmw_dds_common::encode_type_hash_for_user_data_qos(type_hash, [01;31m[Kuser_data_str[m[K)) {
+      |                                                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:141:5:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[KRCUTILS_LOG_WARN_NAMED[m[K’ that depend on a template parameter, so a declaration of ‘[01m[KRCUTILS_LOG_WARN_NAMED[m[K’ must be available [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  141 |     [01;31m[KRCUTILS_LOG_WARN_NAMED[m[K(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:141:5:[m[K [01;36m[Knote: [m[K(if you use ‘[01m[K-fpermissive[m[K’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:149:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  149 |   std::[01;31m[Kvector[m[K<uint8_t> user_data(user_data_str.begin(), user_data_str.end());
+      |        [01;31m[K^~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:20:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ is defined in header ‘[01m[K<vector>[m[K’; did you forget to ‘[01m[K#include <vector>[m[K’?
+   19 | #include "rmw_gurumdds_cpp/qos.hpp"
+  +++ |+[32m[K#include <vector>[m[K
+   20 | 
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:149:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  149 |   std::vector<uint8_t[01;31m[K>[m[K user_data(user_data_str.begin(), user_data_str.end());
+      |                      [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:149:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kuser_data_str[m[K’ was not declared in this scope
+  149 |   std::vector<uint8_t> user_data([01;31m[Kuser_data_str[m[K.begin(), user_data_str.end());
+      |                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:149:24:[m[K [01;31m[Kerror: [m[Kthere are no arguments to ‘[01m[Kuser_data[m[K’ that depend on a template parameter, so a declaration of ‘[01m[Kuser_data[m[K’ must be available [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  149 |   std::vector<uint8_t> [01;31m[Kuser_data[m[K(user_data_str.begin(), user_data_str.end());
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:150:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kuser_data[m[K’ was not declared in this scope
+  150 |   entity_qos.user_data().resize([01;31m[Kuser_data[m[K.size());
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:[m[K At global scope:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:160:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krosidl_type_hash_t[m[K’ does not name a type
+  160 |   const [01;31m[Krosidl_type_hash_t[m[K& type_hash,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:181:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krosidl_type_hash_t[m[K’ does not name a type
+  181 |   const [01;31m[Krosidl_type_hash_t[m[K& type_hash,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp: In instantiation of ‘[01m[Kbool set_entity_qos_from_profile_generic(const rmw_qos_profile_t*, const int&, dds_EntityQos*) [with dds_EntityQos = dds_DataWriterQos; rmw_qos_profile_t = rmw_qos_profile_s][m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:173:38:[m[K   required from here
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:141:27:[m[K [01;31m[Kerror: [m[K‘[01m[KRCUTILS_LOG_WARN_NAMED[m[K’ was not declared in this scope; did you mean ‘[01m[KRCUTILS_WARN_UNUSED[m[K’?
+  141 |     [01;31m[KRCUTILS_LOG_WARN_NAMED([m[K
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  142 | [01;31m[K      "rmw_gurumdds_cpp",[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K  
+  143 | [01;31m[K      "Failed to encode type hash for topic, will not distribute it in USER_DATA.")[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:149:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kuser_data[m[K’ was not declared in this scope
+  149 |   std::vector<uint8_t> user_data(user_data_str.begin(), user_data_str.end()[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:150:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kuser_data[m[K’ in ‘[01m[Kentity_qos[m[K’, which is of pointer type ‘[01m[Kdds_DataWriterQos*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  150 |   [01;31m[Kentity_qos.user_data[m[K().resize(user_data.size());
+      |   [01;31m[K~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:151:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kuser_data[m[K’ in ‘[01m[Kentity_qos[m[K’, which is of pointer type ‘[01m[Kdds_DataWriterQos*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  151 |   [01;31m[Kentity_qos.user_data[m[K().setValue(user_data);
+      |   [01;31m[K~~~~~~~~~~~^~~~~~~~~[m[K
+/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp: In instantiation of ‘[01m[Kbool set_entity_qos_from_profile_generic(const rmw_qos_profile_t*, const int&, dds_EntityQos*) [with dds_EntityQos = dds_DataReaderQos; rmw_qos_profile_t = rmw_qos_profile_s][m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:190:38:[m[K   required from here
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:141:27:[m[K [01;31m[Kerror: [m[K‘[01m[KRCUTILS_LOG_WARN_NAMED[m[K’ was not declared in this scope; did you mean ‘[01m[KRCUTILS_WARN_UNUSED[m[K’?
+  141 |     [01;31m[KRCUTILS_LOG_WARN_NAMED([m[K
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^[m[K
+  142 | [01;31m[K      "rmw_gurumdds_cpp",[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~[m[K  
+  143 | [01;31m[K      "Failed to encode type hash for topic, will not distribute it in USER_DATA.")[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:149:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kuser_data[m[K’ was not declared in this scope
+  149 |   std::vector<uint8_t> user_data(user_data_str.begin(), user_data_str.end()[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:150:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kuser_data[m[K’ in ‘[01m[Kentity_qos[m[K’, which is of pointer type ‘[01m[Kdds_DataReaderQos*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  150 |   [01;31m[Kentity_qos.user_data[m[K().resize(user_data.size());
+      |   [01;31m[K~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/qos.cpp:151:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kuser_data[m[K’ in ‘[01m[Kentity_qos[m[K’, which is of pointer type ‘[01m[Kdds_DataReaderQos*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  151 |   [01;31m[Kentity_qos.user_data[m[K().setValue(user_data);
+      |   [01;31m[K~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:174: CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

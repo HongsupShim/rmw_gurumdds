@@ -1,0 +1,14 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeCache.txt is different than the directory /home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:74:23:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’} to ‘[01m[Krmw_qos_profile_t*[m[K’ {aka ‘[01m[Krmw_qos_profile_s*[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   74 |     node, topic_name, [01;31m[Kqos_policies[m[K, rmw_get_publishers_info_by_topic);
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+      |                       [01;31m[K|[m[K
+      |                       [01;31m[Kconst rmw_qos_profile_t* {aka const rmw_qos_profile_s*}[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:42[m[K:
+[01m[K/home/gurum/ros2_iron/install/rmw_dds_common/include/rmw_dds_common/rmw_dds_common/qos.hpp:177:23:[m[K [01;36m[Knote: [m[K  initializing argument 3 of ‘[01m[Krmw_ret_t rmw_dds_common::qos_profile_get_best_available_for_topic_subscription(const rmw_node_t*, const char*, rmw_qos_profile_t*, const GetEndpointInfoByTopicFunction&)[m[K’
+  177 |   [01;36m[Krmw_qos_profile_t * qos_profile[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,176 @@
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:17[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:[m[K In function ‘[01m[Kdds_StatusKind get_status_kind_from_rmw(rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:74:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_mask_map[m[K’ was not declared in this scope
+   74 |   int bit = [01;31m[Kg_mask_map[m[K[static_cast<int>(event_t)];
+      |             [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:90: CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:17[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:19[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_dynamic_message_type_support.hpp:27[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_dynamic_message_type_support.cpp:15[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_publisher_event_init(rmw_event_t*, const rmw_publisher_t*, rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRMW_GURUMDDS_ID[m[K’ was not declared in this scope
+   58 |         [01;31m[KRMW_GURUMDDS_ID[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_subscription_event_init(rmw_event_t*, const rmw_subscription_t*, rmw_event_type_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRMW_GURUMDDS_ID[m[K’ was not declared in this scope
+   72 |         [01;31m[KRMW_GURUMDDS_ID[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid update_matched(int32_t, int32_t, int32_t, int32_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:79:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |   void update_matched([01;35m[Kint32_t total_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:80:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   80 |                       [01;35m[Kint32_t total_count_change[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:81:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   81 |                       [01;35m[Kint32_t current_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:82:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |                       [01;35m[Kint32_t current_count_change[m[K)
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/ros2_iron/install/rmw/include/rmw/rmw/impl/cpp/macros.hpp:23[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:17[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:101:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRMW_GURUMDDS_ID[m[K’ was not declared in this scope
+  101 |         [01;31m[KRMW_GURUMDDS_ID[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:117:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  117 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:131:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  131 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:136:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  136 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K At global scope:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:142:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  142 |   }[01;31m[K [m[K// extern "C"
+      |    [01;31m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:50:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   50 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:566: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_dynamic_message_type_support.cpp.o] Error 1
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:142:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  142 |   [01;35m[K}[m[K // extern "C"
+      |   [01;35m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K At global scope:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:24:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Krmw_ret_t init_rmw_event(const char*, rmw_event_t*, const char*, void*, rmw_event_type_t)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   24 | [01;35m[Kinit_rmw_event[m[K(
+      | [01;35m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:230: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o] Error 1
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_wait.hpp:29[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_wait.cpp:22[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   59 |  [01;31m[K)[m[K
+      |  [01;31m[K^[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_wait.cpp:22[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_wait.hpp:135:127:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid (* dds_DataWriterListener_on_publication_matched)(const dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K’ redeclared as different kind of entity
+  135 | void (*dds_DataWriterListener_on_publication_matched)(const dds_DataWriter* writer, const dds_PublicationMatchedStatus* status[01;31m[K)[m[K;
+      |                                                                                                                               [01;31m[K^[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/dds_include.hpp:18[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_wait.cpp:20[m[K:
+[01m[K/usr/include/gurumdds/dcps.h:271:16:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ktypedef void (* dds_DataWriterListener_on_publication_matched)(const dds_DataWriter*, const struct dds_PublicationMatchedStatus*)[m[K’
+  271 | typedef void (*[01;36m[Kdds_DataWriterListener_on_publication_matched[m[K)(const dds_DataWriter* writer, const dds_PublicationMatchedStatus* status);
+      |                [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:482: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_wait.cpp.o] Error 1
+In file included from [01m[K/usr/include/c++/11/bits/regex_scanner.h:271[m[K,
+                 from [01m[K/usr/include/c++/11/regex:61[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp:24[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:22[m[K:
+[01m[K/usr/include/c++/11/bits/regex_scanner.tcc:[m[K In member function ‘[01m[Kvoid std::__detail::_Scanner<_CharT>::_M_scan_normal()[m[K’:
+[01m[K/usr/include/c++/11/bits/regex_scanner.tcc:100:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrchr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kstrchr[m[K’?
+  100 |       if (std::[01;31m[Kstrchr[m[K(_M_spec_char, _M_ctype.narrow(__c, ' ')) == nullptr)
+      |                [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/gurum/ros2_iron/src/ros2/rcutils/include/rcutils/error_handling.h:34[m[K,
+                 from [01m[K/home/gurum/ros2_iron/src/ros2/rcutils/include/rcutils/logging.h:25[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw/include/rmw/rmw/types.h:28[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw/include/rmw/rmw/event.h:28[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:18[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:17[m[K:
+[01m[K/usr/include/string.h:228:20:[m[K [01;36m[Knote: [m[K‘[01m[Kstrchr[m[K’ declared here
+  228 | extern const char *[01;36m[Kstrchr[m[K (const char *__s, int __c)
+      |                    [01;36m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/regex_scanner.h:271[m[K,
+                 from [01m[K/usr/include/c++/11/regex:61[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/rmw_context_impl.hpp:24[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:22[m[K:
+[01m[K/usr/include/c++/11/bits/regex_scanner.tcc:[m[K In member function ‘[01m[Kvoid std::__detail::_Scanner<_CharT>::_M_eat_escape_posix()[m[K’:
+[01m[K/usr/include/c++/11/bits/regex_scanner.tcc:406:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstrchr[m[K’ is not a member of ‘[01m[Kstd[m[K’; did you mean ‘[01m[Kstrchr[m[K’?
+  406 |       auto __pos = std::[01;31m[Kstrchr[m[K(_M_spec_char, _M_ctype.narrow(__c, '\0'));
+      |                         [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/gurum/ros2_iron/src/ros2/rcutils/include/rcutils/error_handling.h:34[m[K,
+                 from [01m[K/home/gurum/ros2_iron/src/ros2/rcutils/include/rcutils/logging.h:25[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw/include/rmw/rmw/types.h:28[m[K,
+                 from [01m[K/home/gurum/ros2_iron/install/rmw/include/rmw/rmw/event.h:28[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/event_converter.hpp:18[m[K,
+                 from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:17[m[K:
+[01m[K/usr/include/string.h:228:20:[m[K [01;36m[Knote: [m[K‘[01m[Kstrchr[m[K’ declared here
+  228 | extern const char *[01;36m[Kstrchr[m[K (const char *__s, int __c)
+      |                    [01;36m[K^~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:[m[K In function ‘[01m[Krmw_service_t* rmw_create_service(const rmw_node_t*, const rosidl_service_type_support_t*, const char*, const rmw_qos_profile_t*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:72:23:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kadapted_qos_policies[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   72 |     rmw_qos_profile_t [01;35m[Kadapted_qos_policies[m[K =
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:141:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kadapted_qos_policies[m[K’ was not declared in this scope
+  141 |     ros_service_requester_prefix, service_name, "Request", &[01;31m[Kadapted_qos_policies[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:87:20:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdds_ReturnCode_t ret[m[K’
+   87 |   dds_ReturnCode_t [01;31m[Kret[m[K;
+      |                    [01;31m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:73:13:[m[K [01;36m[Knote: [m[K‘[01m[Krmw_ret_t ret[m[K’ previously declared here
+   73 |   rmw_ret_t [01;36m[Kret[m[K = rmw_dds_common::qos_profile_get_best_available_for_topic_subscription(
+      |             [01;36m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:96:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_topic_name(const char* const&, const char*&, const char [1], rmw_qos_profile_t&)[m[K’
+   96 |   std::string processed_topic_name = [01;31m[Kcreate_topic_name([m[K
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~^[m[K
+   97 | [01;31m[K    ros_topic_prefix, topic_name, "", adapted_qos_policies)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:36[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string create_topic_name(const char*, const char*, const char*, bool)[m[K’
+   44 | [01;36m[Kcreate_topic_name[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:48:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kbool[m[K’
+   48 |   [01;36m[Kbool avoid_ros_namespace_conventions[m[K);
+      |   [01;36m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:51:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string create_topic_name(const char*, const char*, const char*, const rmw_qos_profile_t*)[m[K’
+   51 | [01;36m[Kcreate_topic_name[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:55:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+   55 |   [01;36m[Kconst rmw_qos_profile_t * qos_policies[m[K);
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:154:32:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+  154 |   if (!get_datareader_qos(sub, [01;31m[Kadapted_qos_policies[m[K, type_hash, &datareader_qos)) {
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                [01;31m[K|[m[K
+      |                                [01;31m[Krmw_qos_profile_t {aka rmw_qos_profile_s}[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:37[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:40:29:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kbool get_datareader_qos(dds_Subscriber*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataReaderQos*)[m[K’
+   40 |   [01;36m[Kconst rmw_qos_profile_t * qos_profile[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:193:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kupdate_publication_status_matched[m[K’ was not declared in this scope
+  193 |   listener.on_publication_matched = [01;31m[Kupdate_publication_status_matched[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:552: CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:440: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o[0m
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:111:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kret[m[K’ was not declared in this scope
+  111 |   [01;31m[Kret[m[K = dds_TypeSupport_register_type(dds_typesupport, participant, type_name.c_str());
+      |   [01;31m[K^~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:153:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kadapted_qos_policies[m[K’ was not declared in this scope
+  153 |   if (!get_datareader_qos(sub, &[01;31m[Kadapted_qos_policies[m[K, type_hash, &datareader_qos)) {
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

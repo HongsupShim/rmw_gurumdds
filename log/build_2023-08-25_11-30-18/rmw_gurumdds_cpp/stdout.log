@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_count.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/qos.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_get_topic_endpoint_info.cpp.o[0m

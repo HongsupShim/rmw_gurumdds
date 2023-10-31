@@ -1,0 +1,7 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/types.cpp:25:10:[m[K [01;31m[Kfatal error: [m[Krmw_qos.hpp: No such file or directory
+   25 | #include [01;31m[K"rmw_qos.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:552: CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

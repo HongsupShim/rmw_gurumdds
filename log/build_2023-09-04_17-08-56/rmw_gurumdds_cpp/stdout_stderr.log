@@ -1,0 +1,56 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_compare_gids_equal.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/get_entities.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_event.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_wait.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_context_impl.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/context_listener_thread.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/types.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_dynamic_message_type_support.cpp.o[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid update_matched(int32_t, int32_t, int32_t, int32_t)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:79:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |   void update_matched([01;35m[Kint32_t total_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:80:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktotal_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   80 |                       [01;35m[Kint32_t total_count_change[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:81:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   81 |                       [01;35m[Kint32_t current_count[m[K,
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:82:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent_count_change[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |                       [01;35m[Kint32_t current_count_change[m[K)
+      |                       [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid on_sub_matched(_dds_DataReader*, const dds_SubscriptionMatchedStatus*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:130:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  130 |   auto [01;35m[Kret[m[K = dds_DataReader_get_subscription_matched_status(self, &set_status);
+      |        [01;35m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:127:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  127 | void on_sub_matched(_dds_DataReader *self, [01;35m[Kconst dds_SubscriptionMatchedStatus *status[m[K)
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Kvoid on_pub_matched(_dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:136:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  136 |   auto [01;35m[Kret[m[K = dds_DataWriter_get_publication_matched_status(self, &set_status);
+      |        [01;35m[K^~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:133:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  133 | void on_pub_matched(_dds_DataWriter *self, [01;35m[Kconst dds_PublicationMatchedStatus *status[m[K)
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:[m[K In function ‘[01m[Krmw_ret_t rmw_take_event(const rmw_event_t*, void*, bool*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_event.cpp:109:3:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  109 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:183:37:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(_dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K’ to ‘[01m[Kdds_DataWriterListener_on_publication_matched[m[K’ {aka ‘[01m[Kvoid (*)(const _dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  183 |   listener.on_publication_matched = [01;31m[Kon_pub_matched[m[K;
+      |                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                     [01;31m[K|[m[K
+      |                                     [01;31m[Kvoid (*)(_dds_DataWriter*, const dds_PublicationMatchedStatus*)[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

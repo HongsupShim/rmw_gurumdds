@@ -1,0 +1,9 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp/CMakeCache.txt is different than the directory /home/gurum/gurumnet/rmw_gurumdds/build/rmw_gurumdds_cpp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o[0m
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/event_converter.cpp:25:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kdds_SUBSCRIPTION_INCOMAPATIBLE_TYPE[m[K’ was not declared in this scope; did you mean ‘[01m[KRMW_EVENT_SUBSCRIPTION_INCOMPATIBLE_TYPE[m[K’?
+   25 |      [01;31m[Kdds_SUBSCRIPTION_INCOMAPATIBLE_TYPE[m[K,
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |      [32m[KRMW_EVENT_SUBSCRIPTION_INCOMPATIBLE_TYPE[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:90: CMakeFiles/rmw_gurumdds_cpp.dir/src/event_converter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target rmw_gurumdds_cpp[0m
+[  2%] [32mBuilding CXX object CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o[0m
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:[m[K In function ‘[01m[Krmw_ret_t graph_cache_initialize(rmw_context_impl_t*)[m[K’:
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:368:66:[m[K [01;31m[Kerror: [m[K‘[01m[Knamespace_[m[K’ was not declared in this scope
+  368 | tatic_cast<const char *>(rmw_allocate(sizeof(char) * strlen([01;31m[Knamespace_[m[K) + 1));
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:375:48:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kimplementation_identifier[m[K’ in ‘[01m[Kctx[m[K’, which is of pointer type ‘[01m[Krmw_context_impl_t* const[m[K’ {aka ‘[01m[Krmw_context_impl_s* const[m[K’} (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  375 |   node_handle->implementation_identifier = ctx.[01;31m[Kimplementation_identifier[m[K;
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp/src/graph_cache.cpp:377:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontext[m[K’ was not declared in this scope
+  377 |   node_handle->context = [01;31m[Kcontext[m[K;
+      |                          [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:524: CMakeFiles/rmw_gurumdds_cpp.dir/src/graph_cache.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

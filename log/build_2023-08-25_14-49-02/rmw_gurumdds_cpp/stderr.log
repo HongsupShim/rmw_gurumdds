@@ -1,0 +1,101 @@
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:[m[K In function ‘[01m[Krmw_subscription_t* __rmw_create_subscription(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Subscriber*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_subscription_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:142:46:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rosidl_type_hash_t&[m[K’ {aka ‘[01m[Kconst rosidl_type_hash_s&[m[K’} from expression of type ‘[01m[Kdds_DataReaderQos*[m[K’
+  142 |   if (!get_datareader_qos(sub, qos_policies, [01;31m[K&datareader_qos[m[K)) {
+      |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_subscription.cpp:37[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:41:29:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kbool get_datareader_qos(dds_Subscriber*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataReaderQos*)[m[K’
+   41 |   [01;36m[Kconst rosidl_type_hash_t& type_hash[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:[m[K In function ‘[01m[Krmw_service_t* rmw_create_service(const rmw_node_t*, const rosidl_service_type_support_t*, const char*, const rmw_qos_profile_t*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:72:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos_profile_update_best_available_for_services[m[K’ is not a member of ‘[01m[Krmw_dds_common[m[K’
+   72 |     rmw_dds_common::[01;31m[Kqos_profile_update_best_available_for_services[m[K(*qos_policies);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:71:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kadapted_qos_policies[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   71 |     rmw_qos_profile_t [01;35m[Kadapted_qos_policies[m[K =
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:264:53:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rosidl_type_hash_t&[m[K’ {aka ‘[01m[Kconst rosidl_type_hash_s&[m[K’} from expression of type ‘[01m[Kdds_DataReaderQos*[m[K’
+  264 |   if (!get_datareader_qos(subscriber, qos_policies, [01;31m[K&datareader_qos[m[K)) {
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:34[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:41:29:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kbool get_datareader_qos(dds_Subscriber*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataReaderQos*)[m[K’
+   41 |   [01;36m[Kconst rosidl_type_hash_t& type_hash[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:292:52:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rosidl_type_hash_t&[m[K’ {aka ‘[01m[Kconst rosidl_type_hash_s&[m[K’} from expression of type ‘[01m[Kdds_DataWriterQos*[m[K’
+  292 |   if (!get_datawriter_qos(publisher, qos_policies, [01;31m[K&datawriter_qos[m[K)) {
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_service.cpp:34[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:33:29:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kbool get_datawriter_qos(dds_Publisher*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataWriterQos*)[m[K’
+   33 |   [01;36m[Kconst rosidl_type_hash_t& type_hash[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:[m[K In function ‘[01m[Krmw_publisher_t* __rmw_create_publisher(rmw_context_impl_t*, const rmw_node_t*, dds_DomainParticipant*, dds_Publisher*, const rosidl_message_type_support_t*, const char*, const rmw_qos_profile_t*, const rmw_publisher_options_t*, bool)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_publisher.cpp:145:46:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+  145 |   if (!get_datawriter_qos(pub, qos_policies, [01;31m[K,[m[K&datawriter_qos)) {
+      |                                              [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:454: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_subscription.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:440: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_service.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:384: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_publisher.cpp.o] Error 1
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:[m[K In function ‘[01m[Krmw_client_t* rmw_create_client(const rmw_node_t*, const rosidl_service_type_support_t*, const char*, const rmw_qos_profile_t*)[m[K’:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:65:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos_profile_update_best_available_for_services[m[K’ is not a member of ‘[01m[Krmw_dds_common[m[K’
+   65 |   rmw_qos_profile_t adapted_qos_policies = rmw_dds_common::[01;31m[Kqos_profile_update_best_available_for_services[m[K(*qos_policies);
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:67:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_valid_qos[m[K’ was not declared in this scope
+   67 |    if (![01;31m[Kis_valid_qos[m[K(adapted_qos_policies)) {
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:147:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_topic_name(const char* const&, const char*&, const char [8], rmw_qos_profile_t&)[m[K’
+  147 |   request_topic_name = [01;31m[Kcreate_topic_name([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~^[m[K
+  148 | [01;31m[K    ros_service_requester_prefix, service_name, "Request", adapted_qos_policies)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:35[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string create_topic_name(const char*, const char*, const char*, bool)[m[K’
+   44 | [01;36m[Kcreate_topic_name[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:48:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kbool[m[K’
+   48 |   [01;36m[Kbool avoid_ros_namespace_conventions[m[K);
+      |   [01;36m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:51:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string create_topic_name(const char*, const char*, const char*, const rmw_qos_profile_t*)[m[K’
+   51 | [01;36m[Kcreate_topic_name[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:55:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+   55 |   [01;36m[Kconst rmw_qos_profile_t * qos_policies[m[K);
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:149:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_topic_name(const char* const&, const char*&, const char [6], rmw_qos_profile_t&)[m[K’
+  149 |   response_topic_name = [01;31m[Kcreate_topic_name([m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~^[m[K
+  150 | [01;31m[K    ros_service_response_prefix, service_name, "Reply", adapted_qos_policies)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:35[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string create_topic_name(const char*, const char*, const char*, bool)[m[K’
+   44 | [01;36m[Kcreate_topic_name[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:48:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kbool[m[K’
+   48 |   [01;36m[Kbool avoid_ros_namespace_conventions[m[K);
+      |   [01;36m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:51:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string create_topic_name(const char*, const char*, const char*, const rmw_qos_profile_t*)[m[K’
+   51 | [01;36m[Kcreate_topic_name[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/names_and_types_helpers.hpp:55:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+   55 |   [01;36m[Kconst rmw_qos_profile_t * qos_policies[m[K);
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:273:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+  273 |   if (!get_datawriter_qos(publisher, [01;31m[Kadapted_qos_policies[m[K, &datawriter_qos)) {
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Krmw_qos_profile_t {aka rmw_qos_profile_s}[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:37[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:32:29:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kbool get_datawriter_qos(dds_Publisher*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataWriterQos*)[m[K’
+   32 |   [01;36m[Kconst rmw_qos_profile_t * qos_profile[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:293:39:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’} to ‘[01m[Kconst rmw_qos_profile_t*[m[K’ {aka ‘[01m[Kconst rmw_qos_profile_s*[m[K’}
+  293 |   if (!get_datareader_qos(subscriber, [01;31m[Kadapted_qos_policies[m[K, &datareader_qos)) {
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                                       [01;31m[K|[m[K
+      |                                       [01;31m[Krmw_qos_profile_t {aka rmw_qos_profile_s}[m[K
+In file included from [01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/src/rmw_client.cpp:37[m[K:
+[01m[K/home/gurum/gurumnet/rmw_gurumdds/rmw_gurumdds_cpp/include/rmw_gurumdds_cpp/qos.hpp:40:29:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kbool get_datareader_qos(dds_Subscriber*, const rmw_qos_profile_t*, const rosidl_type_hash_t&, dds_DataReaderQos*)[m[K’
+   40 |   [01;36m[Kconst rmw_qos_profile_t * qos_profile[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rmw_gurumdds_cpp.dir/build.make:188: CMakeFiles/rmw_gurumdds_cpp.dir/src/rmw_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rmw_gurumdds_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,205 @@
+[0.259s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-args', ' -DCMAKE_BUILD_TYPE=Debug']
+[0.259s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Debug'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5871fc0dc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5871fc0850>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5871fc0850>>)
+[0.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.279s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) by extension 'ros'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(demo_nodes_cpp_native_gurumdds) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(gurumdds_cmake_module) by extension 'ros'
+[0.290s] DEBUG:colcon.colcon_core.package_identification:Package 'gurumdds_cmake_module' with type 'ros.ament_cmake' and name 'gurumdds_cmake_module'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(rmw_gurumdds_cpp) by extension 'ros'
+[0.292s] DEBUG:colcon.colcon_core.package_identification:Package 'rmw_gurumdds_cpp' with type 'ros.ament_cmake' and name 'rmw_gurumdds_cpp'
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Debug']'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'cmake_target' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'cmake_clean_cache' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'cmake_clean_first' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'cmake_force_configure' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'ament_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'catkin_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'gurumdds_cmake_module' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.315s] DEBUG:colcon.colcon_core.verb:Building package 'gurumdds_cmake_module' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module', 'merge_install': False, 'path': '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/gurumdds_cmake_module', 'symlink_install': True, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Debug']'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'rmw_gurumdds_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'rmw_gurumdds_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp', 'merge_install': False, 'path': '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.317s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.322s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/gurumdds_cmake_module' with build type 'ament_cmake'
+[0.323s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/gurumdds_cmake_module'
+[0.327s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.327s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.327s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module -- -j16 -l16
+[0.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module' returned '0': _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module -- -j16 -l16
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module': _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module
+[0.381s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gurumdds_cmake_module)
+[0.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module' returned '0': _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/gurumdds_cmake_module
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module' for CMake module files
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module' for CMake config files
+[0.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('gurumdds_cmake_module', 'cmake_prefix_path')
+[0.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/hook/cmake_prefix_path.ps1'
+[0.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/hook/cmake_prefix_path.dsv'
+[0.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/hook/cmake_prefix_path.sh'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/bin'
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/lib/pkgconfig/gurumdds_cmake_module.pc'
+[0.391s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/lib/python3.10/site-packages'
+[0.391s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/bin'
+[0.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.ps1'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.dsv'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.sh'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.bash'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.zsh'
+[0.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/colcon-core/packages/gurumdds_cmake_module)
+[0.410s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gurumdds_cmake_module)
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module' for CMake module files
+[0.414s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module' for CMake config files
+[0.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('gurumdds_cmake_module', 'cmake_prefix_path')
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/hook/cmake_prefix_path.ps1'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/hook/cmake_prefix_path.dsv'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/hook/cmake_prefix_path.sh'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/bin'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/lib/pkgconfig/gurumdds_cmake_module.pc'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/lib/python3.10/site-packages'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/bin'
+[0.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.ps1'
+[0.419s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.dsv'
+[0.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.sh'
+[0.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.bash'
+[0.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/gurumdds_cmake_module/package.zsh'
+[0.420s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module/share/colcon-core/packages/gurumdds_cmake_module)
+[0.421s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp' with build type 'ament_cmake'
+[0.421s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/rmw_gurumdds_cpp'
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp -- -j16 -l16
+[1.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp' returned '0': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --build /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp -- -j16 -l16
+[1.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp
+[1.557s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmw_gurumdds_cpp)
+[1.560s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp' for CMake module files
+[1.560s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp' returned '0': AMENT_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module CMAKE_PREFIX_PATH=/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/gurumdds_cmake_module GURUMDDS_HOME=/usr/share/gurumdds/cmake/../../.. LD_LIBRARY_PATH=/usr/share/gurumdds/cmake/../../../lib _=/usr/bin/env /usr/bin/cmake --install /home/gurum/ros2_iron/src/ros2/rmw_gurumdds/build/rmw_gurumdds_cpp
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp' for CMake config files
+[1.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmw_gurumdds_cpp', 'cmake_prefix_path')
+[1.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/cmake_prefix_path.ps1'
+[1.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/cmake_prefix_path.dsv'
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/cmake_prefix_path.sh'
+[1.564s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib'
+[1.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmw_gurumdds_cpp', 'ld_library_path_lib')
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/ld_library_path_lib.ps1'
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/ld_library_path_lib.dsv'
+[1.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/ld_library_path_lib.sh'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/bin'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib/pkgconfig/rmw_gurumdds_cpp.pc'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib/python3.10/site-packages'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/bin'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.ps1'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.dsv'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.bash'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.zsh'
+[1.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/colcon-core/packages/rmw_gurumdds_cpp)
+[1.638s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmw_gurumdds_cpp)
+[1.641s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp' for CMake module files
+[1.642s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp' for CMake config files
+[1.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmw_gurumdds_cpp', 'cmake_prefix_path')
+[1.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/cmake_prefix_path.ps1'
+[1.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/cmake_prefix_path.dsv'
+[1.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/cmake_prefix_path.sh'
+[1.645s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib'
+[1.645s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmw_gurumdds_cpp', 'ld_library_path_lib')
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/ld_library_path_lib.ps1'
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/ld_library_path_lib.dsv'
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/hook/ld_library_path_lib.sh'
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/bin'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib/pkgconfig/rmw_gurumdds_cpp.pc'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/lib/python3.10/site-packages'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/bin'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.ps1'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.dsv'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.sh'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.bash'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/rmw_gurumdds_cpp/package.zsh'
+[1.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/rmw_gurumdds_cpp/share/colcon-core/packages/rmw_gurumdds_cpp)
+[1.652s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.652s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.652s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.652s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.656s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.657s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.657s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.664s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.667s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/local_setup.ps1'
+[1.667s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/_local_setup_util_ps1.py'
+[1.668s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/setup.ps1'
+[1.669s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/local_setup.sh'
+[1.670s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/_local_setup_util_sh.py'
+[1.670s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/setup.sh'
+[1.671s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/local_setup.bash'
+[1.671s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/setup.bash'
+[1.672s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/local_setup.zsh'
+[1.673s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gurum/ros2_iron/src/ros2/rmw_gurumdds/install/setup.zsh'
